@@ -38,7 +38,7 @@ PROJECT_NAME           = "Open-Transactions"
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = v0.87g
+PROJECT_NUMBER         = v0.1.0
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -734,13 +734,13 @@ WARN_LOGFILE           =
 # Note: If this tag is empty the current directory is searched.
 
 INPUT                  = README.md \
-                         include/lucre \
+                         deps/include/lucre \
                          include/otapi \
+                         include/otextensions \
                          include/otlib \
-                         include/ots \
                          src/otapi \
+                         src/otextensions \
                          src/otlib \
-                         src/ots \
                          src/otd \
                          src/otc
 

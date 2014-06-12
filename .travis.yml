@@ -1,22 +1,33 @@
 os:
-  - linux
-  - osx
+- linux
+- osx
 language: cpp
 compiler:
-  - gcc
-  - clang
+- gcc
+- clang
 install: ./scripts/travis/install-deps.sh "${TRAVIS_OS_NAME}"
 script:
-  - ./scripts/travis/cppcheck_wrapper.sh ./src
-  - ./autogen.sh && ./configure && make distcheck -j 2
+- ./scripts/travis/cppcheck_wrapper.sh ./src
+- ./autogen.sh && ./configure && make distcheck -j 2
 branches:
   only:
-    - master
-    - develop
+  - master
+  - develop
 env:
   global:
     secure: Nry0SprRMjKfEYzcgSv6be18WVDXgqBY0OfF9N+GAtGABFGVtgBa7bA/h5bAwjpsFX0a03OeVMtwngSEOSD3B/7/ASKEk6KJOB3xSOolf8QUF3rDTZCFelrUzQkG8EqAS7sP8u1ztDS6pgKmfGPCfxIQkhPm/sKAkBdwP30+tGg=
 after_success:
 - git config credential.helper "store --file=.git/credentials"
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-#- ./scripts/travis/update_online_documentation.sh
+- ./scripts/travis/build_tar.sh
+deploy:
+  provider: s3
+  access_key_id: AKIAIR7XPKSU5OIGJ5IA
+  secret_access_key:
+    secure: RSr+qKhQ5a52ybnGX9Q7V2ntMZXWeua/uezhX9Hjkqia/j+DvsAuIaNtF5mhAGqukJSdw+1Lfjpmnw9q+jTueUu1NbBDauG0AsqXyyuYyf2NK8+ZJO+7u2u9svJ/IHsfuSENvvAHDsTQxoVit8u2O0GADkGMuoauOyAst1GXrxM=
+  bucket: monetas-builds
+  skip_cleanup: true
+  local-dir: package.tar.gz
+  upload-dir: opentxs/${TRAVIS_BRANCH}
+  region: eu-west-1
+  

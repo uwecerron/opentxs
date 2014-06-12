@@ -144,6 +144,14 @@
 #include "OTPasswordData.hpp"
 #include "OTSymmetricKey.hpp"
 
+
+#if defined (OT_CRYPTO_USING_OPENSSL)
+extern "C"
+{
+#include <openssl/opensslconf.h>
+}
+#endif
+
 #define OT_DEFAULT_PASSWORD "test"
 
 tthread::mutex  OTCachedKey::s_mutexThreadTimeout;

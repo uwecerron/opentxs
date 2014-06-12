@@ -47,9 +47,6 @@ dist_opentxsdoc_DATA	=	docs/INSTALL-Fedora.txt		\
 				VERSION
 
 opentxsdatadir          =	$(pkgdatadir)
-dist_opentxsdata_DATA	=	sample-data/command-line-ot.opt	\
-				sample-data/user-samples.tar.gz
-
 
 pkgconfigdir		=	$(libdir)/pkgconfig
 pkgconfig_DATA		=	src/opentxs.pc

@@ -22,7 +22,12 @@ fi
 os=$1
 
 case "$os" in
-    linux)
+    osx)
+        brew update
+        brew install protobuf-c protobuf boost openssl cppcheck
+        brew link --force openssl
+        ;;
+    linux|"" )
         sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
         sudo apt-get -qq update
         sudo apt-get -qq install g++-4.8
@@ -31,11 +36,6 @@ case "$os" in
         sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 50
         sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 50
         install_cppcheck
-        ;;
-    osx)
-        brew update
-        brew install protobuf-c protobuf boost openssl cppcheck
-        brew link --force openssl
         ;;
     *)
         echo "Error: unknown OS '$os'" >&2

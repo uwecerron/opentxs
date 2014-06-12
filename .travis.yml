@@ -13,21 +13,6 @@ branches:
   only:
     - master
     - develop
-notifications:
-  recipients:
-    - technical@monetas.net
-  email:
-    on_success: change
-    on_failure: always
-  irc:
-    on_success: change
-    on_failure: always
-    channels:
-     - "chat.freenode.net##voting-pools"
-    template:
-      - "%{branch} (%{commit} - %{author}): %{message}"
-      - "Change view: %{compare_url}"
-      - "Build: %{build_url}"
 env:
   global:
     secure: Nry0SprRMjKfEYzcgSv6be18WVDXgqBY0OfF9N+GAtGABFGVtgBa7bA/h5bAwjpsFX0a03OeVMtwngSEOSD3B/7/ASKEk6KJOB3xSOolf8QUF3rDTZCFelrUzQkG8EqAS7sP8u1ztDS6pgKmfGPCfxIQkhPm/sKAkBdwP30+tGg=

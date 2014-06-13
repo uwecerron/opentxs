@@ -27,7 +27,7 @@ deploy:
     secure: RSr+qKhQ5a52ybnGX9Q7V2ntMZXWeua/uezhX9Hjkqia/j+DvsAuIaNtF5mhAGqukJSdw+1Lfjpmnw9q+jTueUu1NbBDauG0AsqXyyuYyf2NK8+ZJO+7u2u9svJ/IHsfuSENvvAHDsTQxoVit8u2O0GADkGMuoauOyAst1GXrxM=
   bucket: monetas-builds
   skip_cleanup: true
-  local-dir: package.tar.gz
+  local-dir: s3
   upload-dir: opentxs/${TRAVIS_BRANCH}
   region: eu-west-1
   

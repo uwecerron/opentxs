@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -x
 
 mkdir package
 
@@ -18,4 +19,3 @@ tar -vpczf "package.tar.gz" $TRAVIS_BUILD_DIR/package/
 
 mkdir s3
 cp package.tar.gz $TRAVIS_BUILD_DIR/s3/package.tar.gz
-

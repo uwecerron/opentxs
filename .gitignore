@@ -129,3 +129,6 @@ build-OpenTransactions*
 
 # KDE Dolphin (file manager) noise
 .directory
+
+#Doxygen Documentation
+docs/html/

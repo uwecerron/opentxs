@@ -1,6 +1,6 @@
 ## Open-Transactions Library Project
 
-[![Build Status](https://travis-ci.org/Open-Transactions/Open-Transactions.svg?branch=develop)](https://travis-ci.org/Open-Transactions/Open-Transactions)
+[![Build Status](https://travis-ci.org/monetas/opentxs.svg?branch=develop)](https://travis-ci.org/monetas/opentxs)
 
 The Open-Transactions project is a collaborative effort to develop
 a robust, commercial-grade, fully-featured, free-software toolkit

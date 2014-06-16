@@ -140,23 +140,11 @@ fi
 ## Chaiscript & Boost & C++11
 #
 
-if test x"$ac_cv_ot_cxx11" == x"true"; then
-	AC_SUBST([CXX11_FLAGS],["-std=c++11"])
-	AC_DEFINE([HAVE_CXX11], [1], [Building with C++11])
-	AC_SUBST([CHAI_CFLAGS],["-I\$(top_srcdir)/deps/include/chai5"])
-	AC_DEFINE([CHAISCRIPT_5], [1], [Building with Chaiscript 5])
-else
-	AC_DEFINE([CXX03_TR1], [1], [Building with C++03 TR1])
-	AC_SUBST([CHAI_CFLAGS],["-I\$(top_srcdir)/deps/include/chai4"])
-	AC_DEFINE([CHAISCRIPT_4], [1], [Building with Chaiscript 4])
-	AX_BOOST_BASE([1.25.0])
-	AX_BOOST_THREAD
-	AX_BOOST_DATE_TIME
-	AX_BOOST_SYSTEM
-	AC_SUBST([BOOST_LIBS],["$BOOST_LDFLAGS $BOOST_THREAD_LIB $BOOST_DATE_TIME_LIB $BOOST_SYSTEM_LIB"])
-	AC_DEFINE([HAVE_BOOST], [1], [We have boost])
-fi
 
+AC_SUBST([CXX11_FLAGS],["-std=c++11"])
+AC_DEFINE([HAVE_CXX11], [1], [Building with C++11])
+AC_SUBST([CHAI_CFLAGS],["-I\$(top_srcdir)/deps/include/chai5"])
+AC_DEFINE([CHAISCRIPT_5], [1], [Building with Chaiscript 5])
 
 ## Protobuff
 #

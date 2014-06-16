@@ -315,49 +315,11 @@ simpleini_headers		=	$(simpleini_headers_dir)/ConvertUTF.h  		\
 pkginclude_simpleinidir		=	$(pkgincludedir)/simpleini
 pkginclude_simpleini_HEADERS	=	$(simpleini_headers)
 
-## Extra to package chai4 headers
-
-chai4hdrs_dir		=	$(top_srcdir)/deps/include/chai4/chaiscript
-
-noinst_HEADERS		=	$(chai4hdrs_dir)/license.txt				\
-				$(chai4hdrs_dir)/chaiscript.hpp				\
-				$(chai4hdrs_dir)/chaiscript_threading.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/bad_boxed_cast.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/bind_first.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/bootstrap.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/bootstrap_stl.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/boxed_cast_helper.hpp	\
-				$(chai4hdrs_dir)/dispatchkit/boxed_cast.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/boxed_number.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/boxed_value.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/dispatchkit.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/dynamic_cast_conversion.hpp\
-				$(chai4hdrs_dir)/dispatchkit/dynamic_object.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/exception_specification.hpp\
-				$(chai4hdrs_dir)/dispatchkit/function_call_detail.hpp	\
-				$(chai4hdrs_dir)/dispatchkit/function_call.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/handle_return.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/operators.hpp		\
-				$(chai4hdrs_dir)/dispatchkit/proxy_constructors.hpp	\
-				$(chai4hdrs_dir)/dispatchkit/proxy_functions_detail.hpp	\
-				$(chai4hdrs_dir)/dispatchkit/proxy_functions.hpp	\
-				$(chai4hdrs_dir)/dispatchkit/register_function.hpp	\
-				$(chai4hdrs_dir)/dispatchkit/type_info.hpp		\
-				$(chai4hdrs_dir)/language/chaiscript_algebraic.hpp	\
-				$(chai4hdrs_dir)/language/chaiscript_common.hpp		\
-				$(chai4hdrs_dir)/language/chaiscript_engine.hpp		\
-				$(chai4hdrs_dir)/language/chaiscript_eval.hpp		\
-				$(chai4hdrs_dir)/language/chaiscript_parser.hpp		\
-				$(chai4hdrs_dir)/language/chaiscript_prelude_docs.hpp	\
-				$(chai4hdrs_dir)/language/chaiscript_prelude.hpp	\
-				$(chai4hdrs_dir)/utility/utility.hpp
-
-
 ## Extra to package chai5 headers
 
 chai5hdrs_dir		=	$(top_srcdir)/deps/include/chai5/chaiscript
 
-noinst_HEADERS		+=	$(chai5hdrs_dir)/license.txt				\
+noinst_HEADERS		=	$(chai5hdrs_dir)/license.txt				\
 				$(chai5hdrs_dir)/chaiscript_defines.hpp			\
 				$(chai5hdrs_dir)/chaiscript.hpp				\
 				$(chai5hdrs_dir)/chaiscript_stdlib.hpp			\

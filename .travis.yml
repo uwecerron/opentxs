@@ -13,10 +13,7 @@ branches:
   only:
   - master
   - develop
-env:
-  global:
-    secure: Nry0SprRMjKfEYzcgSv6be18WVDXgqBY0OfF9N+GAtGABFGVtgBa7bA/h5bAwjpsFX0a03OeVMtwngSEOSD3B/7/ASKEk6KJOB3xSOolf8QUF3rDTZCFelrUzQkG8EqAS7sP8u1ztDS6pgKmfGPCfxIQkhPm/sKAkBdwP30+tGg=
-after_success:
+before_deploy:
 - git config credential.helper "store --file=.git/credentials"
 - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 - ./scripts/travis/build_tar.sh
@@ -24,10 +21,10 @@ deploy:
   provider: s3
   access_key_id: AKIAIR7XPKSU5OIGJ5IA
   secret_access_key:
-    secure: RSr+qKhQ5a52ybnGX9Q7V2ntMZXWeua/uezhX9Hjkqia/j+DvsAuIaNtF5mhAGqukJSdw+1Lfjpmnw9q+jTueUu1NbBDauG0AsqXyyuYyf2NK8+ZJO+7u2u9svJ/IHsfuSENvvAHDsTQxoVit8u2O0GADkGMuoauOyAst1GXrxM=
+    secure: aks8Hc5JaCTfo6jpg2Xx9iU/vVAo/V/x9EwjgN7XS/exjol3aFQ+mVnnXX3sUHliE9Wnq7f1bOLyyDpcwqUj7ZlkZpMo8J7sQi5tBvQSwkG5PbWBu7b4mGEL/HpxOTjx82C07u9pY1twxYP1a/EMeCnX2DfcUJ1WK1s/skj1KcY=
   bucket: monetas-builds
   skip_cleanup: true
   local-dir: s3
-  upload-dir: opentxs/${TRAVIS_BRANCH}
-  region: eu-west-1
-  
+  upload-dir: opentxs/develop
+  on:
+    branch: develop

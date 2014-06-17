@@ -135,6 +135,8 @@
 
 #include "OTCommon.hpp"
 
+namespace opentxs {
+
 typedef uint8_t OT_BYTE;
 typedef bool OT_BOOL;
 
@@ -147,5 +149,8 @@ OT_BYTE CalcChecksum( const OT_BYTE * const buffer, const uint32_t size );
 
 EXPORT OT_BOOL IsChecksumValid( OT_BYTE* buffer, uint32_t size );
 
+
+
+} // namespace opentxs
 
 #endif // __OT_DATA_CHECK_HPP__

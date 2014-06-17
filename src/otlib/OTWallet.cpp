@@ -150,6 +150,8 @@
 #include "irrxml/irrXML.hpp"
 
 
+namespace opentxs {
+
 OTWallet::OTWallet() : m_strDataFolder(OTDataFolder::Get())
 {
 	m_pWithdrawalPurse = NULL;
@@ -1842,3 +1844,5 @@ bool OTWallet::IsNymOnCachedKey(const OTIdentifier & needle) const // needle and
     }
     return false;
 }
+
+} // namespace opentxs

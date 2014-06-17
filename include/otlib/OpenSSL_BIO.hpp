@@ -140,6 +140,7 @@ extern "C"
 #include <openssl/bio.h>
 }
 
+namespace opentxs {
 
 class OpenSSL_BIO {
 private:
@@ -160,5 +161,8 @@ public:
     EXPORT  void release();
     EXPORT  void setFreeOnly();
 };
+
+
+} // namespace opentxs
 
 #endif // __OPENSSL_BIO_HPP__

@@ -135,6 +135,8 @@
 
 #include "OTString.hpp"
 
+namespace opentxs {
+
 class OTAccount;
 class OTAgent;
 class OTIdentifier;
@@ -402,5 +404,8 @@ EXPORT	bool CopyAcctsToConfirmingParty(OTParty & theParty) const; // When confir
 
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_PARTY_HPP__

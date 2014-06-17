@@ -143,6 +143,9 @@
 
 // Also allows for x == 1.
 //
+
+namespace opentxs {
+
 bool isPowerOfTen( const int64_t & x )
 {
 	if (1 == x)
@@ -565,3 +568,5 @@ bool OTOffer::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

@@ -139,6 +139,8 @@
 #include "OTAcctList.hpp"
 #include "OTCronItem.hpp"
 
+namespace opentxs {
+
 class OTAccount;
 class OTParty;
 class OTPseudonym;
@@ -485,5 +487,8 @@ EXPORT	virtual ~OTSmartContract();
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_SMART_CONTRACT_HPP__

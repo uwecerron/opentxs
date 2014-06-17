@@ -137,6 +137,8 @@
 #include "OTContract.hpp"
 #include "OTNumList.hpp"
 
+namespace opentxs {
+
 class OTIdentifier;
 class OTString;
 
@@ -634,5 +636,8 @@ EXPORT	void SetReferenceString(const OTString & theStr);
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_TRANSACTION_TYPE_HPP__

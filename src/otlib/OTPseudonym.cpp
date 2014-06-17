@@ -154,6 +154,9 @@
 
 
 //static
+
+namespace opentxs {
+
 OTPseudonym * OTPseudonym::LoadPublicNym(const OTIdentifier & NYM_ID,
 										 OTString * pstrName/*=NULL*/,
 										 const char * szFuncName/*=NULL*/)
@@ -6163,3 +6166,5 @@ OTPseudonym::~OTPseudonym()
 	m_pkeypair	= NULL;
     // -----------------------------
 }
+
+} // namespace opentxs

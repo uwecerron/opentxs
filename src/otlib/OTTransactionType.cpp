@@ -141,6 +141,9 @@
 
 // static -- class factory.
 //
+
+namespace opentxs {
+
 OTTransactionType * OTTransactionType::TransactionFactory(OTString strInput)
 {
     const char * szFunc = "OTTransactionType::TransactionFactory";
@@ -507,3 +510,5 @@ void OTTransactionType::SetReferenceToNum(const int64_t lTransactionNum)
 {
 	m_lInReferenceToTransaction = lTransactionNum;
 }
+
+} // namespace opentxs

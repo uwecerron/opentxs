@@ -138,6 +138,8 @@
 #include "OTIdentifier.hpp"
 
 
+namespace opentxs {
+
 OTAcctFunctor::OTAcctFunctor(const OTIdentifier & theServerID, mapOfAccounts * pLoadedAccounts/*=NULL*/)
  : m_pServerID(new OTIdentifier(theServerID)), // owned
    m_pLoadedAccounts(pLoadedAccounts) // not owned
@@ -160,3 +162,5 @@ bool OTAcctFunctor::Trigger(OTAccount & theAccount)
 {
     OT_FAIL_MSG("OTAcctFunctor::Trigger: You need to override the Trigger method in your subclass. (It's missing.)");
 }
+
+} // namespace opentxs

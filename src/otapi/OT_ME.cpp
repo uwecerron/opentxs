@@ -157,6 +157,7 @@ This could be wrapped by OTAPI_Basic, just as OTAPI was.
 #  endif
 #endif
 
+namespace opentxs {
 
 OT_ME * OT_ME::s_pMe = NULL;
 
@@ -2270,3 +2271,5 @@ bool OT_ME::Register_Headers_With_Script_Chai(OTScriptChai & theScript)
 }
 
 #endif // OT_USE_SCRIPT_CHAI
+
+} // namespace opentxs

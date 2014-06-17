@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 #include <otlib/OTData.hpp>
 
+using namespace opentxs;
+
 namespace
 {
 

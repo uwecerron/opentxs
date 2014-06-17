@@ -137,6 +137,8 @@
 #include "irrxml/irrXML.hpp"
 
 
+namespace opentxs {
+
 class OTStringXML::OTStringXMLPvt : public irr::io::IFileReadCallBack {
 
 public:
@@ -242,3 +244,5 @@ int32_t OTStringXML::getSize()
 {
 	return GetLength();
 }
+
+} // namespace opentxs

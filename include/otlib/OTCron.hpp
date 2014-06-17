@@ -138,6 +138,8 @@
 #include "OTAssert.hpp"
 #include "OTContract.hpp"
 
+namespace opentxs {
+
 class OTCronItem;
 class OTMarket;
 class OTPseudonym;
@@ -279,5 +281,8 @@ EXPORT	virtual ~OTCron();
 
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_CRON_HPP__

@@ -142,6 +142,9 @@
 
 
 // OTNumList (helper class.)
+
+namespace opentxs {
+
 OTNumList::OTNumList(const std::set<int64_t> & theNumbers)
 {
     Add(theNumbers);
@@ -481,3 +484,5 @@ void OTNumList::Release()
 {
     m_setData.clear();
 }
+
+} // namespace opentxs

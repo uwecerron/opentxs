@@ -147,6 +147,8 @@
 #include <stacktrace.h>
 
 
+namespace opentxs {
+
 #if defined (OT_CRYPTO_USING_OPENSSL)
 
 // low level
@@ -734,3 +736,4 @@ bool OTAsymmetricKey_OpenSSL::OTAsymmetricKey_OpenSSLPrivdp::ArmorPrivateKey(EVP
 
 
 #endif
+} // namespace opentxs

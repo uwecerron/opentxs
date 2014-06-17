@@ -139,6 +139,8 @@
 
 // This class is like OTInstrument except with identifying info (such as transaction number) added.
 
+namespace opentxs {
+
 OTTrackable::OTTrackable() : 
 			ot_super(), m_lTransactionNum(0)
 {
@@ -270,3 +272,5 @@ bool OTTrackable::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

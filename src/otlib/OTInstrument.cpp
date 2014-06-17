@@ -142,6 +142,9 @@
 // to know if it's expired, regardless of whether it's valid yet. So this
 // function answers that for you.
 //
+
+namespace opentxs {
+
 bool OTInstrument::IsExpired()
 {
 	const time64_t CURRENT_TIME =	OTTimeGetCurrentTime();
@@ -271,3 +274,5 @@ int32_t OTInstrument::ProcessXMLNode(irr::io::IrrXMLReader*& xml)
     
 	return nReturnVal;
 }
+
+} // namespace opentxs

@@ -145,6 +145,8 @@
 #include <string>
 
 
+namespace opentxs {
+
 const std::string & OTRecord_GetTypeString(int32_t theType);
 
 
@@ -370,5 +372,8 @@ EXPORT    bool  FormatMailSubject         (std::string & str_output);
 };
 
 
+
+
+} // namespace opentxs
 
 #endif /* defined(__OTClient__OTRecord__) */

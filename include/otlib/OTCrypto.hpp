@@ -143,6 +143,8 @@
 
 #include <set>
 
+namespace opentxs {
+
 class OTAsymmetricKey;
 class OTData;
 class OTIdentifier;
@@ -574,5 +576,8 @@ public:
 )
 */
 
+
+
+} // namespace opentxs
 
 #endif // __OT_CRYPTO_HPP__

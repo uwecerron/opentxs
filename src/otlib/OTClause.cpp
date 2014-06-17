@@ -146,6 +146,8 @@
 // only cares that the party has an active agent, but does not actually speak directly
 // to said agent.)
 
+namespace opentxs {
+
 OTClause::OTClause() : m_pBylaw(NULL)
 {
 
@@ -221,3 +223,5 @@ bool OTClause::Compare(const OTClause & rhs) const
 
 	return true;
 }
+
+} // namespace opentxs

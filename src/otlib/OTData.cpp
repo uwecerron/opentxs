@@ -139,6 +139,8 @@
 #include "OTPassword.hpp"
 
 
+namespace opentxs {
+
 bool OTData::operator==(const OTData &s2) const
 {
 	if (m_lSize != s2.m_lSize) 
@@ -435,3 +437,5 @@ void OTData::SetSize(uint32_t lNewSize)
 		m_lSize = lNewSize;
 	}
 }
+
+} // namespace opentxs

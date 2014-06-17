@@ -214,6 +214,8 @@ extern "C"
 
 
 
+namespace opentxs {
+
 // ------------------------------------------------------------------------------
 //static
 bool OT_API::bInitOTApp = false;
@@ -13037,3 +13039,5 @@ void OT_API::AddAssetContract(const OTAssetContract & theContract)
 
 
 
+
+} // namespace opentxs

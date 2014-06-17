@@ -164,6 +164,9 @@
 //    have since expired.  This shouldn't happen IF the client has been properly notified about these numbers before
 //    sending his request.  Such notifications are dropped into the Nymbox AND related asset account inboxes.
 //
+
+namespace opentxs {
+
 bool OTItem::VerifyTransactionStatement(OTPseudonym & THE_NYM,  OTTransaction & TARGET_TRANSACTION,
                                         const bool bIsRealTransaction/*=true*/) // Sometimes the trans# is 0 (like when processing Nymbox)
 {
@@ -2193,3 +2196,5 @@ bool OTItem::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

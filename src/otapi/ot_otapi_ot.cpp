@@ -20,6 +20,8 @@
 
 #include "ot_utility_ot.hpp"
 
+using namespace opentxs;
+
 string Args;
 string HisAcct;
 string HisNym;

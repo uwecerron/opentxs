@@ -145,6 +145,8 @@
 #include "OpenSSL_BIO.hpp"
 #endif
 
+namespace opentxs {
+
 
 #if defined (OT_CASH_USING_LUCRE)
 
@@ -495,3 +497,5 @@ bool OTMint_Lucre::VerifyToken(OTPseudonym & theNotary, OTString & theCleartextT
 
 
 #endif // defined(OT_CASH_USING_LUCRE) && defined(OT_CRYPTO_USING_OPENSSL)
+
+} // namespace opentxs

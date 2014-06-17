@@ -140,6 +140,9 @@
 // An Identifier is basically a 256 bit hash value.
 // This class makes it easy to convert IDs back and forth to strings.
 //
+
+namespace opentxs {
+
 class OTCachedKey;
 class OTContract;
 class OTMarket;
@@ -214,5 +217,8 @@ EXPORT	void GetString(OTString & theStr) const;
 //bool operator >=(const OTIdentifier &s1, const OTIdentifier& s2);
 //bool operator <=(const OTIdentifier &s1, const OTIdentifier& s2);
 
+
+
+} // namespace opentxs
 
 #endif // __OT_IDENTIFIER_HPP__

@@ -141,6 +141,8 @@
 #include "irrxml/irrXML.hpp"
 
 
+namespace opentxs {
+
 void OTSignedFile::UpdateContents()
 {
 	// I release this because I'm about to repopulate it.
@@ -357,3 +359,5 @@ bool OTSignedFile::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

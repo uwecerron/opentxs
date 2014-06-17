@@ -231,6 +231,7 @@ extern "C"
 
 #endif
 
+namespace opentxs {
 
 #if defined(OT_KEYRING_WINDOWS) && defined(_WIN32)
 
@@ -1472,3 +1473,5 @@ bool OTKeyring::DeleteSecret(const OTString    & strUser,
     }
     return false;
 }
+
+} // namespace opentxs

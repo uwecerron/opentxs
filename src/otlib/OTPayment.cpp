@@ -143,6 +143,8 @@
 #include "irrxml/irrXML.hpp"
 
 
+namespace opentxs {
+
 char const * const __TypeStrings[] = 
 {
     // ------------------
@@ -1684,3 +1686,5 @@ bool OTPayment::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

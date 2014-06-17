@@ -135,6 +135,8 @@
 
 #include "OTVariable.hpp"
 
+namespace opentxs {
+
 class OTClause;
 class OTScriptable;
 
@@ -224,5 +226,8 @@ public:
 	EXPORT	void Serialize(OTString & strAppend, bool bCalculatingID=false);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_BYLAW_HPP__

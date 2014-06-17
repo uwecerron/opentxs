@@ -137,6 +137,8 @@
 #include "OTContract.hpp"
 #include "OTNumList.hpp"
 
+namespace opentxs {
+
 class OTPasswordData;
 class OTPseudonym;
 
@@ -223,5 +225,8 @@ EXPORT    void SetAcknowledgments(OTPseudonym & theNym);
     int64_t        m_lTime;            // Timestamp when the message was signed.
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_MESSAGE_HPP__

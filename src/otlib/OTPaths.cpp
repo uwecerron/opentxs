@@ -208,6 +208,8 @@
 #define OT_SCRIPTS_DIR "lib/opentxs"
 #endif
 
+namespace opentxs {
+
 #ifdef ANDROID
 OTSettings OTPaths::s_settings;
 #else
@@ -1306,3 +1308,5 @@ bool OTPaths::BuildFilePath(const OTString & strFolderPath, bool & out_bFolderCr
     }
     return true;
 }
+
+} // namespace opentxs

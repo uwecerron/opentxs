@@ -196,6 +196,8 @@ public:
 };
  */
 
+namespace opentxs {
+
 bool OTPasswordData::isUsingOldSystem() const
 {
     return m_bUsingOldSystem;
@@ -267,3 +269,5 @@ OTPasswordData::~OTPasswordData()
 	m_pMasterPW  = NULL; // not owned
 //    m_pCachedKey = NULL; // not owned
 }
+
+} // namespace opentxs

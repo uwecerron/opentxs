@@ -135,6 +135,8 @@
 
 #include "OTMint.hpp"
 
+namespace opentxs {
+
 class OTToken;
 
 
@@ -170,5 +172,8 @@ EXPORT	virtual ~OTMint_Lucre();
 
 #endif // Lucre
 
+
+
+} // namespace opentxs
 
 #endif // __OT_MINT_LUCRE_HPP__

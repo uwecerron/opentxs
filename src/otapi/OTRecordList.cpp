@@ -152,6 +152,8 @@
 #include <algorithm>
 
 
+namespace opentxs {
+
 #define MC_UI_TEXT_TO "To: %s"
 #define MC_UI_TEXT_FROM "From: %s"
 
@@ -3480,3 +3482,5 @@ shared_ptr_OTRecord OTRecordList::GetRecord(int32_t nIndex)
 
 
 
+
+} // namespace opentxs

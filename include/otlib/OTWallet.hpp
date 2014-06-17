@@ -137,6 +137,8 @@
 
 #include <set>
 
+namespace opentxs {
+
 class OTAccount;
 class OTAssetContract;
 class OTContract;
@@ -277,5 +279,8 @@ EXPORT	bool RemoveNym    (const OTIdentifier & theTargetID);
 
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_WALLET_HPP__

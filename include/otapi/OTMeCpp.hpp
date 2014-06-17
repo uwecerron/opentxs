@@ -131,6 +131,8 @@ kamH0Y/n11lCvo1oQxM+
 #include "OTCommon.hpp"
 
 
+namespace opentxs {
+
 class OTMeCpp
 {
 public:
@@ -448,5 +450,8 @@ public:
         const std::string & TARGET_NYM_ID,
         const std::string & ADJUSTMENT);
 };
+
+
+} // namespace opentxs
 
 #endif   // __OT_ME_CPP_HPP__

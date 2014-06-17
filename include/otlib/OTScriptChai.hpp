@@ -159,6 +159,8 @@ namespace chaiscript{
     class ChaiScript;
 }
 
+namespace opentxs {
+
 class OTScriptChai : public OTScript
 {
 public:
@@ -183,5 +185,8 @@ public:
 #pragma clang diagnostic pop
 #endif
 
+
+
+} // namespace opentxs
 
 #endif // __OT_SCRIPT_CHAI_HPP__

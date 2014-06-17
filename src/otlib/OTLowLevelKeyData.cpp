@@ -143,6 +143,8 @@
 #include "OTAsymmetricKey_OpenSSLPrivdp.hpp"
 
 
+namespace opentxs {
+
 class OTLowLevelKeyData::OTLowLevelKeyDataOpenSSLdp {
 public:
     X509         *  m_pX509;
@@ -314,3 +316,5 @@ bool OTLowLevelKeyData::SetOntoKeypair(OTKeypair & theKeypair)
 
 
 #endif
+
+} // namespace opentxs

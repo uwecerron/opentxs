@@ -137,6 +137,8 @@
 
 #include <list>
 
+namespace opentxs {
+
 class OTASCIIArmor;
 class OTAsymmetricKey;
 class OTCaller;
@@ -371,5 +373,8 @@ EXPORT	bool SetPublicKey(const OTString & strKey, bool bEscaped=false);
     // ***************************************************************************************
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_ASYMMETRIC_KEY_HPP__

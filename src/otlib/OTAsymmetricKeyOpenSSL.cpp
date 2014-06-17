@@ -145,6 +145,8 @@
 #include "OpenSSL_BIO.hpp"
 #endif
 
+namespace opentxs {
+
 
 #if defined (OT_CRYPTO_USING_OPENSSL)
 
@@ -1050,3 +1052,4 @@ bool OTAsymmetricKey_OpenSSL::LoadPublicKeyFromPGPKey(const OTASCIIArmor & strKe
 
 
 #endif
+} // namespace opentxs

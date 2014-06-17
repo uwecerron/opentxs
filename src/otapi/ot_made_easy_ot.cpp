@@ -37,6 +37,9 @@
 //  True if I have enough numbers, or if there was success getting more transaction numbers.
 //  False if I didn't have enough numbers, tried to get more, and failed somehow.
 //
+
+namespace opentxs {
+
 OT_MADE_EASY_OT bool MadeEasy::insure_enough_nums(const int32_t nNumberNeeded, const string & strMyServerID, const string & strMyNymID)
 {
     Utility MsgUtil;
@@ -1620,3 +1623,5 @@ strData, strData2, strData3, strData4, bBool);
 }
 
 */
+
+} // namespace opentxs

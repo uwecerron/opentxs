@@ -135,6 +135,8 @@
 
 #include "OTCommon.hpp"
 
+namespace opentxs {
+
 class OTPassword;
 
 
@@ -338,5 +340,8 @@ EXPORT	virtual void runOne(const char * szDisplay, OTPassword & theOutput); // A
 EXPORT	virtual void runTwo(const char * szDisplay, OTPassword & theOutput); // Asks for password twice. (For confirmation when changing password or creating nym.)
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_CALLBACK_HPP__

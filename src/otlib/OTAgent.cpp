@@ -149,6 +149,9 @@
 // calls such as HasAgent(), HasAuthorizingAgent(), LoadAuthorizingAgent(), etc.
 // This function also assumes that once you are done, you will call ClearTemporaryPointers().
 //
+
+namespace opentxs {
+
 bool OTAgent::VerifySignature(OTContract & theContract)
 {
 	// Only individual agents can sign for things, not groups (groups vote, they don't sign.)
@@ -1135,3 +1138,5 @@ void OTAgent::Serialize(OTString & strAppend)
 
 //	strAppend.Concatenate("</agent>\n");
 }
+
+} // namespace opentxs

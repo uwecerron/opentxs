@@ -177,6 +177,8 @@
 // DONE: add the methods to OTPseudonym for generating a master credential contract
 // and a sub contract. Add ability to save / load with this data. Then go from there.
 
+namespace opentxs {
+
 OTKeypair::OTKeypair() :
     m_pkeyPublic (OTAsymmetricKey::KeyFactory()),
     m_pkeyPrivate(OTAsymmetricKey::KeyFactory())
@@ -738,3 +740,5 @@ bool OTKeypair::ReEncrypt(OTPassword & theExportPassword, bool bImporting, OTStr
     // --------------------------------------
     return bSuccess;
 }
+
+} // namespace opentxs

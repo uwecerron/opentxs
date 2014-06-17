@@ -143,6 +143,9 @@
 // This class is for storing the names of the folders.  A instance of it must be made.
 // This function will store the folder-names automaticaly in the config file.
 //
+
+namespace opentxs {
+
 class OTFolders
 {
 private:
@@ -228,5 +231,8 @@ public:
 
 }; // class OTFolders
 
+
+
+} // namespace opentxs
 
 #endif // __OT_FOLDERS_HPP__

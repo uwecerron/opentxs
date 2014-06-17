@@ -156,6 +156,9 @@ extern "C"
 #endif
 }
 
+
+namespace opentxs {
+
 int32_t allow_debug = 1;
 
 /*
@@ -1678,3 +1681,5 @@ void OTServerConnection::ProcessMessageOut(char *buf, int32_t * pnExpectReply)
 
 
 
+
+} // namespace opentxs

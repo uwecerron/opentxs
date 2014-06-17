@@ -208,6 +208,9 @@
 #ifndef thread_local
 #define thread_local
 #endif
+
+namespace opentxs {
+
 OTDataFolder * OTDataFolder::pDataFolder;
 
 
@@ -374,3 +377,5 @@ bool OTDataFolder::GetConfigFilePath(OTString & strConfigFilePath)
 
     return false;
 }
+
+} // namespace opentxs

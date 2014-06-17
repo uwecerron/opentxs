@@ -137,6 +137,9 @@
 
 
 //#define PLAN_PROCESS_INTERVAL		OT_TIME_HOUR_IN_SECONDS // todo put this back.
+
+namespace opentxs {
+
 #define PLAN_PROCESS_INTERVAL		OTTimeGetTimeFromSeconds(10)
 
 
@@ -406,5 +409,8 @@ EXPORT	virtual ~OTPaymentPlan();
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_PAYMENT_PLAN_HPP__

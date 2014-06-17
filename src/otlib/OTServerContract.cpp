@@ -142,6 +142,8 @@
 #include "irrxml/irrXML.hpp"
 
 
+namespace opentxs {
+
 OTServerContract::OTServerContract() : OTContract()
 {
 	m_nPort = 0;
@@ -297,3 +299,5 @@ int32_t OTServerContract::ProcessXMLNode(irr::io::IrrXMLReader*& xml)
 	
 	return nReturnVal;
 }
+
+} // namespace opentxs

@@ -145,6 +145,7 @@
 #       include <chaiscript/chaiscript_stdlib.hpp>
 #   endif
 
+namespace opentxs {
 
 bool OTScriptChai::ExecuteScript(OTVariable * pReturnVar/*=NULL*/)
 {
@@ -494,3 +495,5 @@ OTScriptChai::~OTScriptChai()
 
 
 #endif // OT_USE_SCRIPT_CHAI
+
+} // namespace opentxs

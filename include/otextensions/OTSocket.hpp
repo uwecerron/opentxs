@@ -152,6 +152,8 @@ namespace tthread {
 #endif
 #endif
 
+namespace opentxs {
+
 class OTSettings;
 
 
@@ -327,5 +329,8 @@ private:
 
 #endif // OT_ZMQ_2_MODE
 
+
+
+} // namespace opentxs
 
 #endif // __OT_SOCKET_HPP__ 

@@ -134,9 +134,13 @@
 
 #include "OTBasketItem.hpp"
 
+namespace opentxs {
+
 BasketItem::BasketItem() :
     lMinimumTransferAmount(0), 
     lClosingTransactionNo(0)
 { 
 
 }
+
+} // namespace opentxs

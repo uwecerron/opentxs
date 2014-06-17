@@ -135,6 +135,8 @@
 
 #include "OTCommon.hpp"
 
+namespace opentxs {
+
 class OTSignatureMetadata
 {    
 private: // PRIVATE MEMBERS
@@ -160,5 +162,8 @@ public:  // PUBLIC INTERFACE
     bool operator!=(const OTSignatureMetadata & rhs) const { return !(this->operator==(rhs)); }
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_SIGNATURE_METADATA_HPP__ 

@@ -137,6 +137,8 @@
 
 #include "OTCronItem.hpp"
 
+namespace opentxs {
+
 class OTPseudonym;
 
 
@@ -436,5 +438,8 @@ EXPORT	virtual int64_t GetOpeningNumber(const OTIdentifier & theNymID) const;
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_AGREEMENT_HPP__

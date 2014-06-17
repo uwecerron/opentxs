@@ -136,6 +136,8 @@
 #include "OTASCIIArmor.hpp"
 #include "OTSignatureMetadata.hpp"
 
+namespace opentxs {
+
 class OTString;
 
 
@@ -154,5 +156,8 @@ public:  // PUBLIC INTERFACE
 	virtual ~OTSignature();
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_SIGNATURE_HPP__ 

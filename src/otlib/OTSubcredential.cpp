@@ -161,6 +161,8 @@
 // master key. (which is also an OTSubcredential.)
 //
 
+namespace opentxs {
+
 void OTSubcredential::SetOwner(OTCredential & theOwner)
 {
     m_pOwner = &theOwner;
@@ -745,3 +747,5 @@ const OTString & OTSubcredential::GetPubCredential()  const  // More intelligent
     //
     return m_strRawFile;
 }
+
+} // namespace opentxs

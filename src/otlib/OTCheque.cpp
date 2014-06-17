@@ -143,6 +143,8 @@ using namespace irr;
 using namespace io;
 
 
+namespace opentxs {
+
 void OTCheque::UpdateContents()
 {
 	OTString ASSET_TYPE_ID(GetAssetID()),       SERVER_ID(GetServerID()), 
@@ -425,3 +427,5 @@ bool OTCheque::SaveContractWallet(std::ofstream & ofs)
 	
 	return true;
 }
+
+} // namespace opentxs

@@ -136,6 +136,8 @@
 #include "OTCommon.hpp"
 
 
+namespace opentxs {
+
 class OTAmount
 {
     int64_t  m_lAmount;    // $5.45 has m_lAmount set to 545
@@ -165,5 +167,8 @@ EXPORT    OTAmount& operator=(OTAmount other);
 EXPORT    ~OTAmount() {}
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_AMOUNT_HPP__

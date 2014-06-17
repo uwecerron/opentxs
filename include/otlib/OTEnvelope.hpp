@@ -138,6 +138,8 @@
 #include <map>
 #include <set>
 
+namespace opentxs {
+
 class OTASCIIArmor;
 class OTAsymmetricKey;
 class OTPassword;
@@ -213,5 +215,8 @@ EXPORT	bool SetFromBookendedString(const OTString     & strArmorWithBookends, bo
 
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_ENVELOPE_HPP__

@@ -135,6 +135,8 @@
 
 #include "OTTransaction.hpp"
 
+namespace opentxs {
+
 class OTAccount;
 class OTCheque;
 class OTIdentifier;
@@ -323,5 +325,8 @@ EXPORT          char const * GetTypeString() { return OTLedger::_GetTypeString(m
 	// --------------------------------------------------------------
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_LEDGER_HPP__

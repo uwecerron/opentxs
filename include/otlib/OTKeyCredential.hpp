@@ -170,6 +170,8 @@
 // the subkeys, meanwhile should only be able to do actions, and not issue
 // any new keys.
 
+namespace opentxs {
+
 class OTAsymmetricKey;
 class OTCredential;
 class OTPassword;
@@ -261,5 +263,8 @@ EXPORT int32_t GetPublicKeysBySignature(listOfAsymmetricKeys & listOutput,
     void Release_Subkey();
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_KEY_CREDENTIAL_HPP__

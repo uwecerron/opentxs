@@ -157,6 +157,8 @@ using namespace irr;
 using namespace io;
 
 
+namespace opentxs {
+
 char const * const __TypeStrings[] =
 {
 	"simple",	// used by users
@@ -1198,3 +1200,5 @@ OTAccount::~OTAccount()
 {
     Release_Account();
 }
+
+} // namespace opentxs

@@ -142,6 +142,8 @@
 #include <set>
 
 
+namespace opentxs {
+
 void OTBylaw::Serialize(OTString & strAppend,
 						bool bCalculatingID/*=false*/)
 {
@@ -1035,3 +1037,5 @@ OTBylaw::~OTBylaw()
 	// (THEREFORE NO NEED TO CLEAN THEM UP HERE.)
 	//
 }
+
+} // namespace opentxs

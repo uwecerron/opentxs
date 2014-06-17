@@ -152,6 +152,8 @@
 #pragma warning( pop )
 #endif
 
+namespace opentxs {
+
 class OTParty;
 class OTPartyAccount;
 class OTString;
@@ -237,5 +239,8 @@ EXPORT _SharedPtr<OTScript> OTScriptFactory(const std::string & script_type,
 #pragma clang diagnostic pop
 #endif
 
+
+
+} // namespace opentxs
 
 #endif // __OT_SCRIPT_HPP__

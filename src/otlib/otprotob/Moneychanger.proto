@@ -1,7 +1,7 @@
 import "Generics.proto";
 import "Bitcoin.proto";
 
-package OTDB;
+package opentxs.OTDB;
 
 message ServerInfo_InternalPB {
   optional string server_type = 1;

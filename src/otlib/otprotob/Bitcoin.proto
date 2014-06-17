@@ -1,4 +1,4 @@
-package OTDB;
+package opentxs.OTDB;
 
 message BitcoinAcct_InternalPB {
   optional string gui_label = 1;

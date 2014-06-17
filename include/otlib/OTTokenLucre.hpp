@@ -135,6 +135,8 @@
 
 #include "OTToken.hpp"
 
+namespace opentxs {
+
 class OTIdentifier;
 class OTMint;
 class OTPseudonym;
@@ -207,5 +209,8 @@ EXPORT	virtual ~OTToken_Lucre();
 
 #endif // Lucre
 
+
+
+} // namespace opentxs
 
 #endif // __OT_TOKEN_LUCRE_HPP__

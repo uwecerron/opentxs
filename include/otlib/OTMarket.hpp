@@ -139,6 +139,8 @@
 #include "OTCron.hpp"
 #include "OTStorage.hpp"
 
+namespace opentxs {
+
 class OTTrade;
 
 #define MAX_MARKET_QUERY_DEPTH	50  // todo add this to the ini file. (Now that we actually have one.)
@@ -270,5 +272,8 @@ EXPORT	bool GetRecentTradeList(OTASCIIArmor & ascOutput, int32_t & nTradeCount);
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_MARKET_HPP__

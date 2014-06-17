@@ -136,6 +136,8 @@
 #include "OTScriptable.hpp"
 
 
+namespace opentxs {
+
 class OTInstrument : public OTScriptable
 {
 private:  // Private prevents erroneous use by other classes.
@@ -182,5 +184,8 @@ EXPORT  bool IsExpired();			// Verify whether the CURRENT date is AFTER the the 
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_INSTRUMENT_HPP__

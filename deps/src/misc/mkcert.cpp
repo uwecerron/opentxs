@@ -191,11 +191,11 @@ int32_t mkcert(X509 **x509p, EVP_PKEY **pkeyp, int32_t bits, int32_t serial, int
         char * szCertType     = new char[100]();
         char * szComment      = new char[100]();
         // ----------------------------------------------------------------------------
-        OTString::safe_strcpy(szConstraints,  "critical,CA:TRUE",             99);
-        OTString::safe_strcpy(szKeyUsage,     "critical,keyCertSign,cRLSign", 99);
-        OTString::safe_strcpy(szSubjectKeyID, "hash",                         99);
-        OTString::safe_strcpy(szCertType,     "sslCA",                        99);
-        OTString::safe_strcpy(szComment,      "example comment extension",    99);
+        opentxs::OTString::safe_strcpy(szConstraints,  "critical,CA:TRUE",             99);
+        opentxs::OTString::safe_strcpy(szKeyUsage,     "critical,keyCertSign,cRLSign", 99);
+        opentxs::OTString::safe_strcpy(szSubjectKeyID, "hash",                         99);
+        opentxs::OTString::safe_strcpy(szCertType,     "sslCA",                        99);
+        opentxs::OTString::safe_strcpy(szComment,      "example comment extension",    99);
         // ----------------------------------------------------------------------------
         add_ext(x, NID_basic_constraints,      szConstraints);
         add_ext(x, NID_key_usage,              szKeyUsage);

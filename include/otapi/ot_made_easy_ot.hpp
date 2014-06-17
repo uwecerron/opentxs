@@ -6,6 +6,8 @@
 #include <string>
 #include <vector>
 
+namespace opentxs {
+
 #define OT_MADE_EASY_OT
 
 
@@ -75,6 +77,9 @@ public:
     EXPORT OT_MADE_EASY_OT static string withdraw_cash(const string & SERVER_ID, const string & NYM_ID, const string & ACCT_ID, const int64_t AMOUNT);
     EXPORT OT_MADE_EASY_OT static string withdraw_voucher(const string & SERVER_ID, const string & NYM_ID, const string & ACCT_ID, const string & RECIP_NYM_ID, const string & STR_MEMO, const int64_t AMOUNT);
 };
+
+
+} // namespace opentxs
 
 #endif
 

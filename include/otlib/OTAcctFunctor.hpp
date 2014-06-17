@@ -137,6 +137,8 @@
 
 #include <map>
 
+namespace opentxs {
+
 class OTAccount;
 class OTAcctFunctor;
 class OTIdentifier;
@@ -181,5 +183,8 @@ EXPORT    virtual bool Trigger(OTAccount & theAccount)=0; // We still provide an
 //    virtual bool Trigger(OTAccount & theAccount);
 //};
 
+
+
+} // namespace opentxs
 
 #endif // __OT_ACCT_FUNCTOR_HPP__

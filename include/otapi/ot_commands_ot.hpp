@@ -8,6 +8,8 @@
 
 #include <OTStorage.hpp>
 
+namespace opentxs {
+
 #define OT_COMMANDS_OT
 
 
@@ -197,5 +199,8 @@ public:
     EXPORT OT_COMMANDS_OT static int32_t main_write_cheque();
     EXPORT OT_COMMANDS_OT static int32_t main_write_invoice();
 };
+
+
+} // namespace opentxs
 
 #endif

@@ -143,7 +143,6 @@
 
 #include <fstream>
 
-
 /*
  // We want to store EXISTING OT OBJECTS (Usually signed contracts)
  // These have an EXISTING OT path, such as "inbox/acct_id".
@@ -274,13 +273,13 @@
  */
 
 
-OTDB::Storage * OTDB::details::s_pStorage= NULL;
+opentxs::OTDB::Storage * opentxs::OTDB::details::s_pStorage= NULL;
 
 
-OTDB::mapOfFunctions * OTDB::details::pFunctionMap=NULL; // This is a pointer so I can control what order it is created in, on startup.
+opentxs::OTDB::mapOfFunctions * opentxs::OTDB::details::pFunctionMap=NULL; // This is a pointer so I can control what order it is created in, on startup.
 
 
-const char * OTDB::StoredObjectTypeStrings[] =
+const char * opentxs::OTDB::StoredObjectTypeStrings[] =
 {
 	"OTDBString",		// Just a string.
 	"Blob",				// Binary data of arbitrary size.
@@ -309,6 +308,8 @@ const char * OTDB::StoredObjectTypeStrings[] =
 	"StoredObjError"	// (Should never be.)
 };
 
+
+namespace opentxs {
 
 namespace OTDB
 {
@@ -2961,3 +2962,5 @@ namespace OTDB
 
 
 } // namespace OTDB
+
+} // namespace opentxs

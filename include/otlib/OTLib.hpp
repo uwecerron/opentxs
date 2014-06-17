@@ -140,6 +140,8 @@
 /* The classes below are exported */
 #pragma GCC visibility push(default)
 
+namespace opentxs {
+
 class OTLib
 {
 	public:
@@ -150,5 +152,8 @@ class OTLib
 
 #endif
 
+
+
+} // namespace opentxs
 
 #endif // __OT_LIB_HPP__

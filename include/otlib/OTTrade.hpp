@@ -138,6 +138,8 @@
 
 #include "OTCronItem.hpp"
 
+namespace opentxs {
+
 class OTIdentifier;
 class OTPseudonym;
 
@@ -299,5 +301,8 @@ EXPORT	virtual ~OTTrade();
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_TRADE_HPP__

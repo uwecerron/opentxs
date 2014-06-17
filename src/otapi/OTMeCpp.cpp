@@ -133,6 +133,8 @@ kamH0Y/n11lCvo1oQxM+
 #include <ot_otapi_ot.hpp>
 
 
+namespace opentxs {
+
 OTMeCpp::OTMeCpp()
 {
 }
@@ -621,3 +623,5 @@ std::string OTMeCpp::adjust_usage_credits(const std::string & SERVER_ID,
 {
     return MadeEasy::adjust_usage_credits(SERVER_ID, USER_NYM_ID, TARGET_NYM_ID, ADJUSTMENT);
 }
+
+} // namespace opentxs

@@ -135,6 +135,8 @@
 
 #include "OTContract.hpp"
 
+namespace opentxs {
+
 class OTString;
 
 
@@ -163,5 +165,8 @@ EXPORT virtual void CreateContents(); // Only used when first generating an asse
 	virtual bool DisplayStatistics(OTString & strContents) const;
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_SERVER_CONTRACT_HPP__

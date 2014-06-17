@@ -151,6 +151,9 @@ using namespace io;
 
 
 // static
+
+namespace opentxs {
+
 bool OTAssetContract::ParseFormatted(int64_t & lResult,
                                      const std::string & str_input,
                                      int32_t nFactor/*=100*/,
@@ -1071,3 +1074,5 @@ int32_t OTAssetContract::ProcessXMLNode(IrrXMLReader*& xml)
 	
 	return nReturnVal;
 }
+
+} // namespace opentxs

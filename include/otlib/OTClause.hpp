@@ -135,6 +135,8 @@
 
 #include "OTString.hpp"
 
+namespace opentxs {
+
 class OTBylaw;
 
 
@@ -162,5 +164,8 @@ EXPORT	const char * GetCode() const;
 	void Serialize(OTString & strAppend);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_CLAUSE_HPP__

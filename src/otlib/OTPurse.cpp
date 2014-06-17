@@ -146,6 +146,8 @@
 
 #include "irrxml/irrXML.hpp"
 
+namespace opentxs {
+
 typedef std::map    <std::string, OTToken *>    mapOfTokenPointers;
 
 
@@ -1568,3 +1570,5 @@ void OTPurse::ReleaseTokens()
 	
 	m_lTotalValue = 0;
 }
+
+} // namespace opentxs

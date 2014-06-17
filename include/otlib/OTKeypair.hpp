@@ -171,6 +171,8 @@
 // the subkeys, meanwhile should only be able to do actions, and not issue
 // any new keys.
 
+namespace opentxs {
+
 class OTASCIIArmor;
 class OTAsymmetricKey;
 class OTContract;
@@ -286,5 +288,8 @@ public:
     EXPORT ~OTKeypair();
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_KEYPAIR_HPP__

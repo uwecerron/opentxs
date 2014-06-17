@@ -137,6 +137,8 @@
 
 #include <map>
 
+namespace opentxs {
+
 class OTIdentifier;
 class OTStashItem;
 class OTString;
@@ -169,5 +171,8 @@ public:
 	virtual ~OTStash();
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_STASH_HPP__

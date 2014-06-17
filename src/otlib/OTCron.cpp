@@ -147,6 +147,8 @@
 
 // Note: these are only code defaults -- the values are actually loaded from ~/.ot/server.cfg.
 
+namespace opentxs {
+
 int32_t OTCron::__trans_refill_amount		= 500;		// The number of transaction numbers Cron will grab for itself, when it gets low, before each round.
 int32_t OTCron::__cron_ms_between_process	= 10000;	// The number of milliseconds (ideally) between each "Cron Process" event.
 
@@ -1290,3 +1292,5 @@ bool OTCron::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

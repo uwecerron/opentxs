@@ -142,6 +142,8 @@
 #include <set>
 
 
+namespace opentxs {
+
 class OTAsymmetricKey;
 class OTCredential;
 class OTItem;
@@ -696,5 +698,8 @@ EXPORT  int32_t         GetOutpaymentsIndexByTransNum(const int64_t lTransNum); 
 EXPORT	void DisplayStatistics(OTString & strOutput);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_PSEUDONYM_HPP__

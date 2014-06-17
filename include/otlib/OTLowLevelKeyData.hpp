@@ -135,6 +135,8 @@
 
 #include "OTCommon.hpp"
 
+namespace opentxs {
+
 class OTCaller;
 class OTKeypair;
 
@@ -201,5 +203,8 @@ public:
 #endif  // Crypto engine.
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_LOW_LEVEL_KEY_DATA_HPP__

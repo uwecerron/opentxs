@@ -147,6 +147,8 @@
 #include "irrxml/irrXML.hpp"
 
 
+namespace opentxs {
+
 char const * const __TypeStrings[] = 
 {
 	"nymbox",           // the nymbox is per user account (versus per asset account) and is used to receive new transaction numbers (and messages.)
@@ -2462,3 +2464,5 @@ bool OTLedger::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

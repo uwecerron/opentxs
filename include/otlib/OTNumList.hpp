@@ -137,6 +137,8 @@
 
 #include <set>
 
+namespace opentxs {
+
 class OTAsymmetricKey;
 class OTPasswordData;
 class OTString;
@@ -197,5 +199,8 @@ EXPORT    bool Output(OTString & strOutput) const; // returns false if the numli
 EXPORT    void Release();
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_NUM_LIST_HPP__

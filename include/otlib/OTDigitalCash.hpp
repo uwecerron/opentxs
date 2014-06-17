@@ -157,6 +157,8 @@
 // be easily added here as options for Open-Transactions.
 
 
+namespace opentxs {
+
 #ifdef OT_CASH_USING_LUCRE
 
 class _OT_Lucre_Dumper
@@ -176,5 +178,8 @@ public:
 
 #endif
 
+
+
+} // namespace opentxs
 
 #endif // __OT_DIGITAL_CASH_HPP__

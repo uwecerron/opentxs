@@ -139,6 +139,8 @@
 #include "OTScript.hpp"
 
 
+namespace opentxs {
+
 void OTVariable::Serialize(OTString & strAppend,
 						   bool bCalculatingID/*=false*/)
 {
@@ -475,3 +477,5 @@ bool OTVariable::Compare(OTVariable & rhs)
 
 	return bMatch;
 }
+
+} // namespace opentxs

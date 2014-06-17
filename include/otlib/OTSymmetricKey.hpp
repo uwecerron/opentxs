@@ -135,6 +135,8 @@
 
 #include "OTPayload.hpp"
 
+namespace opentxs {
+
 class OTASCIIArmor;
 class OTIdentifier;
 class OTPassword;
@@ -294,5 +296,8 @@ public:
 	// ------------------------------------------------------------------------
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_SYMMETRIC_KEY_HPP__

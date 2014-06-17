@@ -167,6 +167,7 @@
 #define SCRIPTABLE_CALLBACK_PARTY_MAY_EXECUTE		"callback_party_may_execute_clause"
 #endif
 
+namespace opentxs {
 
 OTScriptable * OTScriptable::InstantiateScriptable(const OTString & strInput)
 {
@@ -3162,3 +3163,5 @@ bool OTScriptable::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

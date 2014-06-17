@@ -1,4 +1,4 @@
-package OTDB;
+package opentxs.OTDB;
 
 message String_InternalPB {
   optional string value = 1;

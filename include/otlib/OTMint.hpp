@@ -135,6 +135,8 @@
 
 #include "OTContract.hpp"
 
+namespace opentxs {
+
 class OTAccount;
 class OTASCIIArmor;
 class OTToken;
@@ -266,5 +268,8 @@ EXPORT	virtual bool VerifyToken(OTPseudonym & theNotary, OTString & theCleartext
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_MINT_HPP__

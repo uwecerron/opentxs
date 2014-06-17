@@ -158,6 +158,9 @@
 // Like if I wanted to have different Token types for different cash
 // algorithms. All I have to do is change the return type.
 //
+
+namespace opentxs {
+
 OTCronItem * OTCronItem::NewCronItem(const OTString & strCronItem)
 {
 	static char		buf[45] = "";
@@ -2501,3 +2504,5 @@ bool OTCronItem::SaveContractWallet(std::ofstream & ofs)
 	return true;
 }
 */
+
+} // namespace opentxs

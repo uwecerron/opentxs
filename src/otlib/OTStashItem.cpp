@@ -137,6 +137,8 @@
 #include "OTLog.hpp"
 
 
+namespace opentxs {
+
 /*
  int64_t GetAmount() const { return m_lAmount; }
  void SetAmount(const int64_t lAmount) { m_lAmount = lAmount; }
@@ -225,3 +227,5 @@ bool OTStashItem::DebitStash(const int64_t &lAmount)
 
 	return true;
 }
+
+} // namespace opentxs

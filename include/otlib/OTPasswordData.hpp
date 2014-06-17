@@ -135,6 +135,8 @@
 
 #include "OTCommon.hpp"
 
+namespace opentxs {
+
 class OTCachedKey;
 class OTPassword;
 class OTString;
@@ -288,6 +290,7 @@ void main()
 #include <cstdio>
 #include <Wincrypt.h>
 #include <strsafe.h>
+
 #pragma comment(lib, "crypt32.lib")
 
 void main()
@@ -364,5 +367,8 @@ EXPORT    OTPasswordData(const OTString    &  strDisplay, OTPassword * pMasterPW
 EXPORT    ~OTPasswordData();
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_PASSWORD_DATA_HPP__

@@ -142,6 +142,8 @@
 #include "OTScriptChai.hpp"
 #endif
 
+namespace opentxs {
+
 
 // A script should be "Dumb", meaning that you just stick it with its
 // parties and other resources, and it EXPECTS them to be the correct
@@ -420,3 +422,5 @@ bool OTScript::ExecuteScript(OTVariable * pReturnVar/*=NULL*/)
     OTLog::vError("OTScript::ExecuteScript: Scripting has been disabled.\n");
     return true;
 }
+
+} // namespace opentxs

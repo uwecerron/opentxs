@@ -149,6 +149,8 @@
 //#include "OpenSSL_BIO.hpp"
 #endif
 
+namespace opentxs {
+
 
 // The current implementation for withdrawals (using Lucre) requires only a single proto-token
 // to be sent, signed, and returned. Only the ID of the token is blinded.
@@ -1188,3 +1190,5 @@ bool OTToken::VerifyToken(OTPseudonym & theNotary, OTMint & theMint)
 #if defined (OT_CASH_USING_MAGIC_MONEY)
 // Todo:  Someday...
 #endif // Magic Money
+
+} // namespace opentxs

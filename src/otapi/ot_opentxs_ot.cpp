@@ -11,6 +11,8 @@
 
 using std::string;
 
+namespace opentxs {
+
 #define OT_OPENTXS_OT
 
 // ---------------------------------
@@ -550,3 +552,5 @@ int OT_OPENTXS_OT OT_ME::opentxs_main_loop()
     // Otherwise, show list.
     return interpret_command("list");
 }
+
+} // namespace opentxs

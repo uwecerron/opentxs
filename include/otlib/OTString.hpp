@@ -189,6 +189,8 @@
 //#endif // _WIN32
 // TODO: consider how MAX_SIZE affects the above hard-coded number...
 
+namespace opentxs {
+
 class OTASCIIArmor;
 class OTContract;
 class OTIdentifier;
@@ -491,5 +493,8 @@ protected:
 //bool operator >=(const OTString &s1, const OTString& s2);
 //bool operator <=(const OTString &s1, const OTString& s2);
 
+
+
+} // namespace opentxs
 
 #endif // __OT_STRING_HPP__

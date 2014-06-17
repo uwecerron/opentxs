@@ -140,6 +140,8 @@
 #include "simpleini/SimpleIni.hpp"
 
 
+namespace opentxs {
+
 class OTSettings::OTSettingsPvt{
 public:
     CSimpleIniA * iniSimple;
@@ -617,3 +619,5 @@ bool	OTSettings::SetOption_bool(const OTString & strSection, const OTString & st
 	bool bNewOrUpdate;
 	return CheckSet_bool(strSection,strKey,bVariableName,bVariableName,bNewOrUpdate);
 }
+
+} // namespace opentxs

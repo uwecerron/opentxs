@@ -140,6 +140,8 @@
 #include "OTMessage.hpp"
 
 
+namespace opentxs {
+
 OTPayload::OTPayload() : OTData()
 {
 
@@ -326,3 +328,5 @@ const void * OTPayload::GetPayloadPointer() const
 {
 	return GetPointer();
 }
+
+} // namespace opentxs

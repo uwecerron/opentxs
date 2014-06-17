@@ -254,6 +254,9 @@ extern "C"
 #ifndef thread_local
 #define thread_local
 #endif
+
+namespace opentxs {
+
 OTLog * OTLog::pLogger = NULL;
 
 
@@ -1719,3 +1722,5 @@ void OTLog::SetupSignalHandler()
 }
 
 #endif  // #if windows, #else (unix) #endif. (SIGNAL handling.)
+
+} // namespace opentxs

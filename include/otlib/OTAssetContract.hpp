@@ -135,6 +135,8 @@
 
 #include "OTContract.hpp"
 
+namespace opentxs {
+
 class OTAccount;
 class OTAcctFunctor;
 class OTAmount;
@@ -236,5 +238,8 @@ EXPORT    const OTString & GetCurrencyTLA      () const { return m_strCurrencyTL
 //    virtual bool Trigger(OTAccount & theAccount);
 //};
 
+
+
+} // namespace opentxs
 
 #endif // __OT_ASSET_CONTRACT_HPP__

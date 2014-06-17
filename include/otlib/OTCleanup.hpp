@@ -143,7 +143,9 @@
 //
 // For example, if you call SetCleanupTarget() on multiple objects, then only the LAST
 // one will get cleaned up, and the others will leak!
-//
+
+namespace opentxs {
+
 template <class T> class OTCleanup
 {
 private:
@@ -165,5 +167,6 @@ public:
 	~OTCleanup() { if (m_pCharge) delete const_cast<T *>(m_pCharge); m_pCharge = NULL; }
 };
 
+} // namespace opentxs
 
 #endif // __OT_CLEANUP_HPP__

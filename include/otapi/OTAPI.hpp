@@ -132,6 +132,8 @@
 
 #include <string>
 
+namespace opentxs {
+
 class OT_API;
 class OTAPI_Exec;
 class OTServerContract;
@@ -3929,6 +3931,9 @@ public:
 
 
 
+
+
+} // namespace opentxs
 
 #endif // __OTAPI_HPP__
 

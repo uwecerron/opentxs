@@ -137,6 +137,9 @@
 
 
 //class OTStringXML : public OTString, public irr::io::IFileReadCallBack
+
+namespace opentxs {
+
 class OTStringXML : public OTString
 {
 private:
@@ -160,5 +163,8 @@ EXPORT operator irr::io::IFileReadCallBack *();
 	int32_t getSize();
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_STRING_XML_HPP__

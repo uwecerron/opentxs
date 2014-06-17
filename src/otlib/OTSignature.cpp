@@ -138,6 +138,8 @@
 #include "OTLog.hpp"
 
 
+namespace opentxs {
+
 bool OTSignatureMetadata::SetMetadata(char cMetaKeyType, char cMetaNymID, char cMetaMasterCredID, char cMetaSubCredID)
 {
     switch (cMetaKeyType)
@@ -362,3 +364,5 @@ bool OTSignature::CalculateDigest(OTData & dataInput)
 }
 
 */
+
+} // namespace opentxs

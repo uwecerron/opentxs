@@ -136,6 +136,8 @@
 // only necessary because of OTAccount::AccountType
 #include "OTAccount.hpp"
 
+namespace opentxs {
+
 class OTPseudonym;
 
 
@@ -177,5 +179,8 @@ EXPORT	_SharedPtr<OTAccount> GetOrCreateAccount(OTPseudonym			& theServerNym,
                                                const int64_t             lStashTransNum=0);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_ACCT_LIST_HPP__

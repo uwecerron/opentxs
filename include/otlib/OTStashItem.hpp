@@ -136,6 +136,8 @@
 #include "OTString.hpp"
 
 
+namespace opentxs {
+
 class OTStashItem
 {
 	OTString	m_strAssetTypeID;
@@ -158,5 +160,8 @@ public:
 // Each item is mapped by AssetTypeID
 //
 
+
+
+} // namespace opentxs
 
 #endif // __OT_STASH_ITEM_HPP__

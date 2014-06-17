@@ -170,6 +170,8 @@
 #include "OTAccount.hpp"  //included in OTSmartContract.hpp
 
 
+namespace opentxs {
+
 #ifndef OT_BOOL
 #define OT_BOOL int32_t
 #endif
@@ -14410,3 +14412,5 @@ OT_BOOL OTAPI_Exec::Message_GetTransactionSuccess(const std::string & SERVER_ID,
 
 
 
+
+} // namespace opentxs

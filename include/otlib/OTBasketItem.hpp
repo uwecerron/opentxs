@@ -137,6 +137,8 @@
 
 #include <deque>
 
+namespace opentxs {
+
 class BasketItem;
 
 typedef std::deque <BasketItem *> dequeOfBasketItems;
@@ -164,5 +166,8 @@ public:
 	~BasketItem() {}
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_BASKET_ITEM_HPP__

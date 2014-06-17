@@ -169,6 +169,9 @@
  all the users of that basket currency.
 
  */
+
+namespace opentxs {
+
 class OTBasket : public OTContract
 {
 private:  // Private prevents erroneous use by other classes.
@@ -251,5 +254,8 @@ EXPORT	void AddRequestSubContract(const OTIdentifier & SUB_CONTRACT_ID,
 EXPORT void HarvestClosingNumbers(OTPseudonym & theNym, const OTIdentifier & theServerID, const bool bSave=true);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_BASKET_HPP__

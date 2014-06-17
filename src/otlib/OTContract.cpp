@@ -164,6 +164,9 @@ using namespace io;
 
 
 //static
+
+namespace opentxs {
+
 bool OTContract::DearmorAndTrim(const OTString & strInput, OTString & strOutput, OTString & strFirstLine)
 {
     // --------------------------
@@ -2726,3 +2729,5 @@ bool OTContract::InsertNym(const OTString & strKeyName, const OTString & strKeyV
 
 	return bResult;
 }
+
+} // namespace opentxs

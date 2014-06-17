@@ -141,6 +141,9 @@
 
 
 // Thread local.
+
+namespace opentxs {
+
 class OTDataFolder
 {
 private:
@@ -178,5 +181,8 @@ public:
 	EXPORT static bool GetConfigFilePath(OTString & strConfigFilePath);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_DATA_FOLDER_HPP__

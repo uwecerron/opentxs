@@ -26,8 +26,8 @@ cp -rf src/otapi/.libs/libotapi.so.0.0.0 package/
 cp -rf src/.libs/opentxs package/
 
 version=`cat VERSION`
-compiler=${CXX}-`${CXX} -dumpversion`
-package="opentxs-${version}-${build}-${compiler}-${os}.tar.gz"
+compiler=${CXX}
+package="opentxs-${version}-${build}-${os}-${compiler}.tar.gz"
 
 tar -vpczf $package package/
 

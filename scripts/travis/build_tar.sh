@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -e
 
-os="linux"
+os="$1"
 if [[ -z "$1" ]] ; then
-    os=$1
+    os="linux"
 fi
 
-build="0"
+build="$2"
 if [[ -z "$2" ]] ; then
-    build="$2"
+    build="0"
 fi
 
 mkdir package

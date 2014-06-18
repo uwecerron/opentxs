@@ -13,6 +13,7 @@ fi
 
 mkdir opentxs
 
+# opentxs
 cp -rf include opentxs/
 cp -rf src/otlib/.libs/libot.so opentxs/
 cp -rf src/otlib/.libs/libot.so.0 opentxs/
@@ -24,6 +25,14 @@ cp -rf src/otapi/.libs/libotapi.so opentxs/
 cp -rf src/otapi/.libs/libotapi.so.0 opentxs/
 cp -rf src/otapi/.libs/libotapi.so.0.0.0 opentxs/
 cp -rf src/.libs/opentxs opentxs/
+
+# deps
+mkdir opentxs/include/misc
+cp -rf deps/include/misc/Timer.hpp opentxs/include/misc/
+cp -rf deps/include/misc/tinythread.hpp opentxs/include/misc/
+cp -rf deps/include/containers opentxs/include/
+cp -rf deps/include/irrxml opentxs/include/
+cp -rf deps/src/irrxml/.libs/libirrxml.a opentxs/
 
 version=`cat VERSION`
 compiler=${CXX}

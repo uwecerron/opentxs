@@ -11,25 +11,26 @@ if [[ -z "$2" ]] ; then
     build="0"
 fi
 
-mkdir package
+mkdir opentxs
 
-cp -rf include package/
-cp -rf src/otlib/.libs/libot.so package/
-cp -rf src/otlib/.libs/libot.so.0 package/
-cp -rf src/otlib/.libs/libot.so.0.0.0 package/
-cp -rf src/otextensions/.libs/libotextensions.so package/
-cp -rf src/otextensions/.libs/libotextensions.so.0 package/
-cp -rf src/otextensions/.libs/libotextensions.so.0.0.0 package/
-cp -rf src/otapi/.libs/libotapi.so package/
-cp -rf src/otapi/.libs/libotapi.so.0 package/
-cp -rf src/otapi/.libs/libotapi.so.0.0.0 package/
-cp -rf src/.libs/opentxs package/
+cp -rf include opentxs/
+cp -rf src/otlib/.libs/libot.so opentxs/
+cp -rf src/otlib/.libs/libot.so.0 opentxs/
+cp -rf src/otlib/.libs/libot.so.0.0.0 opentxs/
+cp -rf src/otextensions/.libs/libotextensions.so opentxs/
+cp -rf src/otextensions/.libs/libotextensions.so.0 opentxs/
+cp -rf src/otextensions/.libs/libotextensions.so.0.0.0 opentxs/
+cp -rf src/otapi/.libs/libotapi.so opentxs/
+cp -rf src/otapi/.libs/libotapi.so.0 opentxs/
+cp -rf src/otapi/.libs/libotapi.so.0.0.0 opentxs/
+cp -rf src/.libs/opentxs opentxs/
 
 version=`cat VERSION`
 compiler=${CXX}
 package="opentxs-${version}-${build}-${os}-${compiler}.tar.gz"
 
-tar -vpczf $package package/
+echo "Creating package ${package}"
+tar -vpczf ${package} opentxs/
 
 mkdir s3
 cp ${package} s3/

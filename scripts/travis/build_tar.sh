@@ -17,9 +17,10 @@ cp -rf $TRAVIS_BUILD_DIR/src/.libs/opentxs $TRAVIS_BUILD_DIR/package/
 
 version=`cat VERSION`
 compiler=${CXX}-`${CXX} -dumpversion`
-package="opentxs-${version}-${TRAVIS_BUILD_NUMBER}-${compiler}.tar.gz"
+os=$TRAVIS_OS_NAME
+package="opentxs-${version}-${TRAVIS_BUILD_NUMBER}-${compiler}-${os}.tar.gz"
 
-tar -vpczf $package $TRAVIS_BUILD_DIR/package/
+tar -vpczf $package package/
 
 mkdir s3
 cp ${package} $TRAVIS_BUILD_DIR/s3/

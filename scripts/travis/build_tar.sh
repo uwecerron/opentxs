@@ -6,11 +6,6 @@ if [[ -z "$1" ]] ; then
     os="linux"
 fi
 
-build="$2"
-if [[ -z "$2" ]] ; then
-    build="0"
-fi
-
 mkdir opentxs
 
 # opentxs
@@ -45,7 +40,7 @@ cp -rf deps/src/irrxml/.libs/libirrxml.a opentxs/
 
 version=`cat VERSION`
 compiler=${CXX}
-package="opentxs-${version}-${build}-${os}-${compiler}.tar.gz"
+package="opentxs-${version}-${os}-${compiler}.tar.gz"
 
 echo "Creating package ${package}"
 tar -vpczf ${package} opentxs/

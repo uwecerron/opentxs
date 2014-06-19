@@ -140,6 +140,8 @@
 
 #include <deque>
 
+namespace opentxs {
+
 class OTCron;
 class OTIdentifier;
 class OTPseudonym;
@@ -332,5 +334,8 @@ EXPORT      int64_t GetClosingNum() const;
 //	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_CRON_ITEM_HPP__

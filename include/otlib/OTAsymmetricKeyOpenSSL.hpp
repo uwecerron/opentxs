@@ -135,6 +135,8 @@
 
 #include "OTAsymmetricKey.hpp"
 
+namespace opentxs {
+
 class OTASCIIArmor;
 class OTCaller;
 class OTPassword;
@@ -231,5 +233,8 @@ protected:
 
 #endif
 
+
+
+} // namespace opentxs
 
 #endif // __OT_ASYMMETRIC_KEY_OPEN_SSL_HPP__

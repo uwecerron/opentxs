@@ -154,6 +154,8 @@
 #include "OTStorage.hpp"
 
 
+namespace opentxs {
+
 bool OTKeyCredential::VerifySignedBySelf()
 {
     return this->VerifyWithKey(m_SigningKey.GetPublicKey());
@@ -676,3 +678,5 @@ void OTKeyCredential::SetMetadata()
     m_SigningKey.SetMetadata(theMetadata);
     // ----------------------------------------------------
 }
+
+} // namespace opentxs

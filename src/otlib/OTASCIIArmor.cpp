@@ -147,6 +147,8 @@
 #include <zlib.h>
 #endif
 
+namespace opentxs {
+
 
 const char * OT_BEGIN_ARMORED   = "-----BEGIN OT ARMORED";
 const char * OT_END_ARMORED     =   "-----END OT ARMORED";
@@ -1114,3 +1116,5 @@ OTASCIIArmor::~OTASCIIArmor()
 {
 	// ~OTString called automatically, which calls Release().
 }
+
+} // namespace opentxs

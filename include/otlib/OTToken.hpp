@@ -136,6 +136,8 @@
 #include "OTASCIIArmor.hpp"
 #include "OTInstrument.hpp"
 
+namespace opentxs {
+
 class OTIdentifier;
 class OTMint;
 class OTNym_or_SymmetricKey;
@@ -348,5 +350,8 @@ EXPORT virtual bool ProcessToken(const OTPseudonym & theNym, OTMint & theMint, O
 	virtual	bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_TOKEN_HPP__

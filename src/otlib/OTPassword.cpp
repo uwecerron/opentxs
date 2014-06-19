@@ -163,6 +163,8 @@
 #endif
 
 
+namespace opentxs {
+
 // For everything but Windows:
 //
 #ifndef _WIN32
@@ -1043,3 +1045,5 @@ int32_t OTPassword::setMemory(const void * vInput, uint32_t nInputSize)
 	// ---------------------------------
 	return m_nPasswordSize;
 }
+
+} // namespace opentxs

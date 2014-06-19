@@ -150,6 +150,8 @@
 // The purpose of this class is to cache server replies (internally to OT)
 // so that the developer using the OT API has access to them.
 
+namespace opentxs {
+
 void OTMessageBuffer::Push(OTMessage & theMessage)
 {
 	m_listMessages.push_back(&theMessage);
@@ -885,3 +887,5 @@ OTMessageOutbuffer::~OTMessageOutbuffer()
 {
 	Clear();
 }
+
+} // namespace opentxs

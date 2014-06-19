@@ -154,6 +154,8 @@
 #include <zmq/zmq.hpp>
 #endif // OT_ZMQ_2_MODE
 
+namespace opentxs {
+
 
 // OTSocket base class.
 OTSocket::OTSocket()
@@ -1326,3 +1328,5 @@ bool OTSocket_ZMQ_4::HandleReceivingError()
 
 
 #endif // OT_ZMQ_4_MODE
+
+} // namespace opentxs

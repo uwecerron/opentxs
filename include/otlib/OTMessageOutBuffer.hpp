@@ -135,6 +135,8 @@
 
 #include "OTString.hpp"
 
+namespace opentxs {
+
 class OTMessage;
 class OTPseudonym;
 class OTTransaction;
@@ -186,5 +188,8 @@ EXPORT	OTMessage * GetSentMessage      (const OTTransaction & theTransaction); /
 EXPORT	bool        RemoveSentMessage   (const OTTransaction & theTransaction); // true == it was removed. false == it wasn't found.
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_MESSAGE_OUT_BUFFER_HPP__

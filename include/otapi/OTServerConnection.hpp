@@ -141,6 +141,8 @@
 #include "OTServerContract.hpp"
 
 
+namespace opentxs {
+
 struct TransportCallback;
 
 class OTMessage;
@@ -205,5 +207,8 @@ EXPORT	bool Connect(OTPseudonym & theNym, OTServerContract & theServerContract,
 	bool SignAndSend(OTMessage & theMessage);
 
 };
+
+
+} // namespace opentxs
 
 #endif // __OT_SERVERCONNECTION_HPP__

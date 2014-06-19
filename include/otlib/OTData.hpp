@@ -137,6 +137,8 @@
 
 #include "OTCleanup.hpp"
 
+namespace opentxs {
+
 class OTASCIIArmor;
 
 
@@ -196,5 +198,8 @@ public:
 	// --------------------------------------------
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_DATA_HPP__

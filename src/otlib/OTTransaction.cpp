@@ -149,6 +149,8 @@
 #include "irrxml/irrXML.hpp"
 
 
+namespace opentxs {
+
 char const * const __TypeStrings[] = 
 {
 	"blank",			// freshly issued, not used yet  // comes from server, stored on Nym. (Nymbox.)
@@ -7182,3 +7184,5 @@ bool OTTransaction::GetMemo(OTString & strMemo)
 	
 	return bSuccess;
 }
+
+} // namespace opentxs

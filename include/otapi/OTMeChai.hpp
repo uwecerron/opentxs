@@ -131,6 +131,8 @@
 #include "OTMeCpp.hpp"
 
 
+namespace opentxs {
+
 class OT_ME;
 class OTString;
 class OTVariable;
@@ -462,5 +464,8 @@ public:
         const std::string & TARGET_NYM_ID,
         const std::string & ADJUSTMENT);
 };
+
+
+} // namespace opentxs
 
 #endif   // __OT_ME_CHAI_HPP__

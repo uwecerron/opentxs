@@ -152,6 +152,7 @@
 // Todo:  Someday...
 #endif // Magic Money
 
+namespace opentxs {
 
 #if defined(OT_CASH_USING_LUCRE) && defined(OT_CRYPTO_USING_OPENSSL)
 
@@ -400,3 +401,5 @@ bool OTToken_Lucre::ProcessToken(const OTPseudonym & theNym, OTMint & theMint, O
 
 
 #endif // defined(OT_CASH_USING_LUCRE) && defined(OT_CRYPTO_USING_OPENSSL)
+
+} // namespace opentxs

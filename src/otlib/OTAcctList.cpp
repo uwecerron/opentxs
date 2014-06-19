@@ -151,6 +151,8 @@ using namespace irr;
 using namespace io;
 
 
+namespace opentxs {
+
 void TranslateAccountTypeToString(OTAccount::AccountType theType, OTString & strAcctType);
 
 
@@ -434,3 +436,5 @@ _SharedPtr<OTAccount> OTAcctList::GetOrCreateAccount(OTPseudonym			& theServerNy
 
 	return pRetVal;
 }
+
+} // namespace opentxs

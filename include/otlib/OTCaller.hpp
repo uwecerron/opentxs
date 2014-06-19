@@ -135,6 +135,8 @@
 
 #include "OTPassword.hpp"
 
+namespace opentxs {
+
 class OTPassword;
 class OTCallback;
 
@@ -473,5 +475,8 @@ void unlock_mem(void* ptr, size_t bytes)
 
  */
 
+
+
+} // namespace opentxs
 
 #endif // __OT_CALLER_HPP__

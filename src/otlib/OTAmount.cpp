@@ -135,6 +135,8 @@
 #include "OTAmount.hpp"
 
 
+namespace opentxs {
+
 OTAmount::OTAmount(int64_t lAmount/*=0*/) :
     m_lAmount(lAmount)
 {
@@ -160,3 +162,5 @@ OTAmount& OTAmount::operator=(OTAmount other)
 //{
 //    swap(*this, other);
 //}
+
+} // namespace opentxs

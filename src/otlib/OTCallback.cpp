@@ -161,6 +161,8 @@
 #endif
 
 
+namespace opentxs {
+
 OTCallback::~OTCallback()
 {
 	OTLog::vError("OTCallback::~OTCallback:  (This should only happen ONCE ONLY -- as the application is closing.)\n");
@@ -182,3 +184,5 @@ void OTCallback::runTwo(const char * szDisplay, OTPassword & theOutput) // child
 {
 	OT_FAIL_MSG("OTCallback::runTwo: ASSERT (The child class was supposed to override this method.)\n");
 }
+
+} // namespace opentxs

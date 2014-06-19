@@ -135,6 +135,8 @@
 
 #include "OTCommon.hpp"
 
+namespace opentxs {
+
 class OTPassword;
 
 
@@ -556,5 +558,8 @@ void unlock_mem(void* ptr, size_t bytes)
 
  */
 
+
+
+} // namespace opentxs
 
 #endif // __OT_PASSWORD_HPP__

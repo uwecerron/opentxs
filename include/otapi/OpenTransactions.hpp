@@ -165,6 +165,8 @@
 
 // --------------------------------------
 
+namespace opentxs {
+
 class OT_API;
 class OTAccount;
 class OTASCIIArmor;
@@ -1096,6 +1098,8 @@ EXPORT	OTServerContract * LoadServerContract(const OTIdentifier & SERVER_ID);
 	EXPORT void AddServerContract(const OTServerContract & pContract);
 	EXPORT void AddAssetContract(const OTAssetContract & theContract);
 };
+
+} // namespace opentxs
 
 #endif // NOT_SWIG
 

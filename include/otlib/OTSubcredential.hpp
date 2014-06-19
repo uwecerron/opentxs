@@ -169,6 +169,8 @@
 // the subkeys, meanwhile should only be able to do actions, and not issue
 // any new keys.
 
+namespace opentxs {
+
 class OTContract;
 class OTCredential;
 class OTIdentifier;
@@ -283,5 +285,8 @@ EXPORT virtual void CalculateContractID(OTIdentifier & newID);
     virtual bool SaveContractWallet(std::ofstream & ofs) { return false; }
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_SUBCREDENTIAL_HPP__

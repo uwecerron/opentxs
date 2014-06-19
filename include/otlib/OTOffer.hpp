@@ -137,6 +137,8 @@
 
 #include "OTInstrument.hpp"
 
+namespace opentxs {
+
 class OTTrade;
 
 
@@ -273,5 +275,8 @@ EXPORT	virtual ~OTOffer();
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_OFFER_HPP__

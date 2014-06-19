@@ -150,6 +150,7 @@ extern "C"
 #endif
 }
 
+namespace opentxs {
 
 // This class stores the iteration count, the salt, and the encrypted key.
 // These are all generated or set when you call GenerateKey.
@@ -1233,3 +1234,5 @@ void OTSymmetricKey::Release()
 
     // no call to ot_super::Release() here, since this is a base class (currently with no children...)
 }
+
+} // namespace opentxs

@@ -149,6 +149,8 @@
 #endif
 
 
+namespace opentxs {
+
 //static
 OTMint * OTMint::MintFactory()
 {
@@ -957,3 +959,5 @@ bool OTMint::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

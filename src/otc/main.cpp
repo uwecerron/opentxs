@@ -160,6 +160,7 @@ kamH0Y/n11lCvo1oQxM+
 
 #define OT_OPTIONS_FILE_DEFAULT	"command-line-ot.opt"
 
+using namespace opentxs;
 
 static string str_Args;
 static string str_HisAcct;

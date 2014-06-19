@@ -147,6 +147,7 @@ extern "C"
 #endif
 }
 
+namespace opentxs {
 
 // There are certain cases where we want the option to pass a Nym OR a
 // symmetric key, and the function should be able to handle either.
@@ -474,3 +475,5 @@ bool OTNym_or_SymmetricKey::Seal_or_Encrypt(      OTEnvelope & outputEnvelope,
     // -----------------------------------
 	return bSuccess;
 }
+
+} // namespace opentxs

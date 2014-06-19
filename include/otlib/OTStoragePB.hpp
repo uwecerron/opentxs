@@ -227,6 +227,7 @@ virtual bool WriteToOStream(std::ostream &outStream); \
 }
 */
 
+namespace opentxs {
 
 namespace OTDB
 {
@@ -361,6 +362,8 @@ namespace OTDB
 
 
 } // namespace OTDB
+
+} // namespace opentxs
 
 #endif // defined(OTDB_PROTOCOL_BUFFERS)
 

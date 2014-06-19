@@ -135,6 +135,8 @@
 
 #include "OTString.hpp"
 
+namespace opentxs {
+
 class OTBylaw;
 class OTScript;
 class OTVariable;
@@ -213,5 +215,8 @@ EXPORT	virtual ~OTVariable();
 				   bool bCalculatingID=false);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_VARIABLE_HPP__

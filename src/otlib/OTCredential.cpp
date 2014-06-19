@@ -162,6 +162,9 @@
 // keys. It also means that metadata must match IF it's present, but that otherwise, if theSignature has no metadata at
 // all, then it will still be a "presumed match" and returned as a possibility. (With the 'A', 'E', or 'S' enforced.)
 //
+
+namespace opentxs {
+
 int32_t OTCredential::GetPublicKeysBySignature(listOfAsymmetricKeys & listOutput,
                                            const OTSignature & theSignature,
                                            char cKeyType/*='0'*/) const // 'S' (signing key) or 'E' (encryption key) or 'A' (authentication key)
@@ -1481,3 +1484,5 @@ void OTCredential::SerializeIDs(OTString & strOutput, listOfStrings & listRevoke
     } // FOR_EACH_CONST
     // -------------------------------------
 }
+
+} // namespace opentxs

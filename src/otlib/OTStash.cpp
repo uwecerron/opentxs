@@ -142,6 +142,8 @@
 #include "irrxml/irrXML.hpp"
 
 
+namespace opentxs {
+
 void OTStash::Serialize(OTString & strAppend)
 {
 	strAppend.Concatenate("<stash name=\"%s\" count=\"%d\" >\n\n",
@@ -311,3 +313,5 @@ bool OTStash::DebitStash(const std::string str_asset_type_id, const int64_t &lAm
 
 	return pStashItem->DebitStash(lAmount);
 }
+
+} // namespace opentxs

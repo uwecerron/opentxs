@@ -559,6 +559,8 @@
 #define SMARTCONTRACT_HOOK_ON_DEACTIVATE	"cron_deactivate"
 #endif
 
+namespace opentxs {
+
 
 // TODO: Finish up Smart Contracts (this file.)
 
@@ -5506,3 +5508,5 @@ bool OTSmartContract::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

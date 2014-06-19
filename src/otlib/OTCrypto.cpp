@@ -198,6 +198,7 @@ extern "C"
 
 #endif
 
+namespace opentxs {
 
 // OpenSSL / Crypto-lib d-pointer
 #if defined (OT_CRYPTO_USING_GPG)
@@ -4937,3 +4938,5 @@ int32_t main(int32_t argc, char *argv[])
     return rv;
 }
 */
+
+} // namespace opentxs

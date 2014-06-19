@@ -135,6 +135,8 @@
 
 #include "OTCommon.hpp"
 
+namespace opentxs {
+
 class OTEnvelope;
 class OTIdentifier;
 class OTPassword;
@@ -200,5 +202,8 @@ public:
 	EXPORT	void Release_Nym_or_SymmetricKey(); // NOT called in the destructor, since this normally doesn't own its contents.
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_NYM_OR_SYMMETRIC_KEY_HPP__

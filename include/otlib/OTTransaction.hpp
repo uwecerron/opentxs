@@ -135,6 +135,8 @@
 
 #include "OTItem.hpp"
 
+namespace opentxs {
+
 /*
 WHEN THE server receives a transaction request, it receives a MESSAGE containing an ascii-armored LEDGER.
 
@@ -819,5 +821,8 @@ EXPORT	static const char * _GetTypeString(transactionType theType);
                                const bool    bTransactionWasFailure); // false until positively asserted.
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_TRANSACTION_HPP__

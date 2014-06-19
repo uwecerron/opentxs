@@ -148,6 +148,8 @@
 // This also makes sure that Nyms and Entities don't ever share IDs, so the
 // IDs become more and more interchangeable.
 
+namespace opentxs {
+
 OTPartyAccount::OTPartyAccount()
 : m_pForParty(NULL), m_pAccount(NULL), m_lClosingTransNo(0)
 {
@@ -543,3 +545,5 @@ bool OTPartyAccount::Compare(const OTPartyAccount & rhs) const
 
 	return true;
 }
+
+} // namespace opentxs

@@ -169,6 +169,8 @@ kamH0Y/n11lCvo1oQxM+
 
 #include <stdint.h>
 
+namespace opentxs {
+
 class OT_API;
 
 class OTAPI_Exec
@@ -3993,6 +3995,9 @@ public:
 
 
 
+
+
+} // namespace opentxs
 
 #endif // __OTAPI_Exec_H__
 

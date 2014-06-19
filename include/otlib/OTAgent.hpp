@@ -137,6 +137,8 @@
 
 #include <map>
 
+namespace opentxs {
+
 class OTAccount;
 class OTAgent;
 class OTIdentifier;
@@ -385,5 +387,8 @@ EXPORT	const OTString & GetName() { return m_strName; } // agent's name as used 
 
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_AGENT_HPP__

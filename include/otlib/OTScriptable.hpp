@@ -136,6 +136,8 @@
 
 #include "OTContract.hpp"
 
+namespace opentxs {
+
 class OTAccount;
 class OTAgent;
 class OTBylaw;
@@ -358,5 +360,8 @@ EXPORT	static OTScriptable * InstantiateScriptable(const OTString & strInput);
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_SCRIPTABLE_HPP__

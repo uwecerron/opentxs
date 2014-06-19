@@ -135,6 +135,8 @@
 
 #include "OTInstrument.hpp"
 
+namespace opentxs {
+
 class OTNumList;
 
 
@@ -202,5 +204,8 @@ public:
 	virtual bool SaveContractWallet(std::ofstream & ofs);
  };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_TRACKABLE_HPP__

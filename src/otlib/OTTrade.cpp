@@ -143,6 +143,8 @@
 #include "irrxml/irrXML.hpp"
 
 
+namespace opentxs {
+
 #ifndef TRADE_PROCESS_INTERVAL
 
 #define TRADE_PROCESS_INTERVAL		10		// 10 seconds
@@ -1358,3 +1360,5 @@ bool OTTrade::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

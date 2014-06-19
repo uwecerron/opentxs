@@ -162,6 +162,8 @@ kamH0Y/n11lCvo1oQxM+
 
 #include "OTAPI_Exec.hpp"
 
+namespace opentxs {
+
 class Mock_OTAPI_Exec : public OTAPI_Exec
 {
 private:
@@ -571,5 +573,8 @@ public:
 	MOCK_METHOD1(Message_GetNewAcctID, std::string (const std::string & THE_MESSAGE));
 	MOCK_METHOD1(Message_GetNymboxHash, std::string (const std::string & THE_MESSAGE));
 };
+
+
+} // namespace opentxs
 
 #endif

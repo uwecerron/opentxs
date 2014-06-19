@@ -137,6 +137,8 @@
 
 #include <deque>
 
+namespace opentxs {
+
 class OTASCIIArmor;
 class OTNym_or_SymmetricKey;
 class OTPassword;
@@ -279,5 +281,8 @@ public:
 	//	virtual bool SaveContractWallet(FILE * fl);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_PURSE_HPP__

@@ -216,6 +216,7 @@ public: \
 
 #endif // (not) SWIG
 
+namespace opentxs {
 
 namespace OTDB
 {
@@ -1630,6 +1631,8 @@ namespace OTDB
 	// Also, coders using the API should be able to subclass Storage in their own language via SWIG.
 
 } // namespace OTDB
+
+} // namespace opentxs
 
 
 // IStorable-derived types...

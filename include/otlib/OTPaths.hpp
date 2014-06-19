@@ -140,6 +140,9 @@
 
 
 // All directories have a trailing "/" while files do not. <== remember to enforce this!!!
+
+namespace opentxs {
+
 class OTPaths
 {
 private:
@@ -238,5 +241,8 @@ public:
 
 }; // class OTPaths
 
+
+
+} // namespace opentxs
 
 #endif // __OT_PATHS_HPP__

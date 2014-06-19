@@ -137,6 +137,8 @@
 
 #include <list>
 
+namespace opentxs {
+
 class OTMessage;
 class OTString;
 
@@ -170,5 +172,8 @@ EXPORT	OTMessage * Pop     (const int64_t & lRequestNum,    // Pop:  Caller IS r
                          const OTString & strNymID);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_MESSAGE_BUFFER_HPP__

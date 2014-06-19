@@ -136,6 +136,8 @@
 #include "OTIdentifier.hpp"
 #include "OTStringXML.hpp"
 
+namespace opentxs {
+
 class OTAsymmetricKey;
 class OTPasswordData;
 class OTSignature;
@@ -442,5 +444,8 @@ EXPORT  bool VerifyWithKey(const OTAsymmetricKey & theKey,
 EXPORT	const OTPseudonym	  * GetContractPublicNym();
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_CONTRACT_HPP__

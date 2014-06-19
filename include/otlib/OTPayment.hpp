@@ -140,6 +140,8 @@
 
 #include "OTContract.hpp"
 
+namespace opentxs {
+
 class OTCheque;
 class OTNumList;
 class OTPaymentPlan;
@@ -339,5 +341,8 @@ EXPORT  const char * GetTypeString() const { return OTPayment::_GetTypeString(m_
 EXPORT	static paymentType GetTypeFromString(const OTString & strType);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_PAYMENT_HPP__

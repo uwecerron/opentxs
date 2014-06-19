@@ -144,6 +144,9 @@
 
 // Checks opening number on party, and closing numbers on his accounts.
 //
+
+namespace opentxs {
+
 bool OTParty::HasTransactionNum(const int64_t & lInput) const
 {
     if (lInput == m_lOpeningTransNo)
@@ -1906,3 +1909,5 @@ bool OTParty::CopyAcctsToConfirmingParty(OTParty & theParty) const
 
 	return true;
 }
+
+} // namespace opentxs

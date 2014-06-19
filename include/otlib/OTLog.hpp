@@ -147,6 +147,8 @@
 #define PREDEF_MODE_DEBUG 1
 #endif
 
+namespace opentxs {
+
 EXPORT typedef std::deque <OTString *> dequeOfStrings;
 
 
@@ -287,5 +289,8 @@ public:
 
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_LOG_HPP__

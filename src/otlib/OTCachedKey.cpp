@@ -154,6 +154,8 @@ extern "C"
 
 #define OT_DEFAULT_PASSWORD "test"
 
+namespace opentxs {
+
 tthread::mutex  OTCachedKey::s_mutexThreadTimeout;
 tthread::mutex  OTCachedKey::s_mutexCachedKeys;
 mapOfCachedKeys OTCachedKey::s_mapCachedKeys;
@@ -1178,3 +1180,5 @@ void OTCachedKey::ResetMasterPassword()
         // -----------------------------------------------------
     }
 }
+
+} // namespace opentxs

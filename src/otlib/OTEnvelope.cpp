@@ -148,6 +148,7 @@ extern "C"
 #endif
 }
 
+namespace opentxs {
 
 // Presumably this Envelope contains encrypted data (in binary form.)
 // If you would like an ASCII-armored version of that data, just call this
@@ -610,3 +611,5 @@ OTEnvelope::~OTEnvelope()
 {
 	
 }
+
+} // namespace opentxs

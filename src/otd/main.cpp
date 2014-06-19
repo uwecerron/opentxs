@@ -169,6 +169,7 @@
 #define KEY_FILE            "certs/special/client.pem"
 
 
+using namespace opentxs;
 
 void HandleCommandLineArguments(int32_t argc, char* argv[], AnyOption * opt);
 

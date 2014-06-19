@@ -151,6 +151,9 @@
 // addr storage/lookup through this simple interface. OTRecordList then
 // calls it.
 //
+
+namespace opentxs {
+
 class OTNameLookup
 {
 public:
@@ -379,6 +382,9 @@ EXPORT    bool                 RemoveRecord(int32_t nIndex);
  Etc.
  
  */
+
+
+} // namespace opentxs
 
 #endif /* defined(__OTClient__OTRecordList__) */
 

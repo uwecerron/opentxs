@@ -135,6 +135,8 @@
 
 #include "OTTransactionType.hpp"
 
+namespace opentxs {
+
 class OTAccount;
 class OTItem;
 class OTLedger;
@@ -424,5 +426,8 @@ EXPORT	static void GetStringFromType(OTItem::itemType theType, OTString & strTyp
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_ITEM_HPP__

@@ -164,6 +164,8 @@
 #include <time.h>
 
 
+namespace opentxs {
+
 int32_t OTClient::CalcReturnVal(const int64_t & lRequestNumber)
 {
     m_lMostRecentRequestNumber = lRequestNumber;
@@ -10743,3 +10745,5 @@ OTClient::~OTClient()
 
     // (FYI, Moved openssl cleanup to OT_Cleanup.)
 }
+
+} // namespace opentxs

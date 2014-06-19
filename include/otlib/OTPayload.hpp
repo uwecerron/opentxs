@@ -135,6 +135,8 @@
 
 #include "OTData.hpp"
 
+namespace opentxs {
+
 class OTASCIIArmor;
 class OTEnvelope;
 class OTMessage;
@@ -168,5 +170,8 @@ EXPORT	bool GetEnvelope(OTEnvelope & theEnvelope) const; // Envelope retrieved f
 EXPORT	bool SetEnvelope(const OTEnvelope & theEnvelope); // Envelope copied into payload to prepare for sending.
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_PAYLOAD_HPP__ 

@@ -45,19 +45,19 @@ inline int64_t to_long  (const string & strValue) { return OTAPI_Wrap::StringToL
 
 class the_lambda_struct;
 
-typedef std::map<string, OTDB::OfferDataNym *> SubMap;
+typedef std::map<string, opentxs::OTDB::OfferDataNym *> SubMap;
 typedef std::map<string, SubMap *> MapOfMaps;
-typedef int32_t (*LambdaFunc)(OTDB::OfferDataNym & offer_data, const int32_t nIndex, MapOfMaps & map_of_maps, SubMap & sub_map, the_lambda_struct & extra_vals);
+typedef int32_t (*LambdaFunc)(opentxs::OTDB::OfferDataNym & offer_data, const int32_t nIndex, MapOfMaps & map_of_maps, SubMap & sub_map, the_lambda_struct & extra_vals);
 
 
-EXPORT OT_OTAPI_OT MapOfMaps * convert_offerlist_to_maps(OTDB::OfferListNym & offerList);
-EXPORT OT_OTAPI_OT int32_t find_strange_offers(OTDB::OfferDataNym & offer_data, const int32_t nIndex, MapOfMaps & map_of_maps, SubMap & sub_map, the_lambda_struct & extra_vals); // if 10 offers are printed for the SAME market, nIndex will be 0..9
+EXPORT OT_OTAPI_OT MapOfMaps * convert_offerlist_to_maps(opentxs::OTDB::OfferListNym & offerList);
+EXPORT OT_OTAPI_OT int32_t find_strange_offers(opentxs::OTDB::OfferDataNym & offer_data, const int32_t nIndex, MapOfMaps & map_of_maps, SubMap & sub_map, the_lambda_struct & extra_vals); // if 10 offers are printed for the SAME market, nIndex will be 0..9
 EXPORT OT_OTAPI_OT int32_t iterate_nymoffers_maps(MapOfMaps & map_of_maps, LambdaFunc the_lambda); // low level. map_of_maps must be good. (assumed.)
 EXPORT OT_OTAPI_OT int32_t iterate_nymoffers_maps(MapOfMaps & map_of_maps, LambdaFunc the_lambda, the_lambda_struct & extra_vals); // low level. map_of_maps must be good. (assumed.)
 EXPORT OT_OTAPI_OT int32_t iterate_nymoffers_sub_map(MapOfMaps & map_of_maps, SubMap & sub_map, LambdaFunc the_lambda);
 EXPORT OT_OTAPI_OT int32_t iterate_nymoffers_sub_map(MapOfMaps & map_of_maps, SubMap & sub_map, LambdaFunc the_lambda, the_lambda_struct & extra_vals);
-EXPORT OT_OTAPI_OT OTDB::OfferListNym * loadNymOffers(const string & serverID, const string & nymID);
-EXPORT OT_OTAPI_OT int32_t output_nymoffer_data(OTDB::OfferDataNym & offer_data, const int32_t nIndex, MapOfMaps & map_of_maps, SubMap & sub_map, the_lambda_struct & extra_vals); // if 10 offers are printed for the SAME market, nIndex will be 0..9
+EXPORT OT_OTAPI_OT opentxs::OTDB::OfferListNym * loadNymOffers(const string & serverID, const string & nymID);
+EXPORT OT_OTAPI_OT int32_t output_nymoffer_data(opentxs::OTDB::OfferDataNym & offer_data, const int32_t nIndex, MapOfMaps & map_of_maps, SubMap & sub_map, the_lambda_struct & extra_vals); // if 10 offers are printed for the SAME market, nIndex will be 0..9
 
 
 extern string Args;

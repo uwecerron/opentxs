@@ -135,6 +135,8 @@
 
 #include "OTString.hpp"
 
+namespace opentxs {
+
 class OTAccount;
 class OTAgent;
 class OTIdentifier;
@@ -245,5 +247,8 @@ EXPORT	OTAgent   * GetAuthorizedAgent();
 	void ClearTemporaryPointers() { m_pAccount = NULL; }
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_PARTY_ACCOUNT_HPP__

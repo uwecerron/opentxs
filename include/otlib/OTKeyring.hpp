@@ -151,6 +151,8 @@
 //#define OT_KEYRING_KWALLET  1
 //#define OT_KEYRING_FLATFILE 1
 
+namespace opentxs {
+
 class OTString;
 class OTPassword;
 
@@ -292,5 +294,8 @@ EXPORT static std::string s_str_passwd_folder; //NOTE: Do not ever use this. OT_
 
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_KEYRING_HPP__

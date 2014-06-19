@@ -139,6 +139,8 @@
 
 #include <map>
 
+namespace opentxs {
+
 class OTASCIIArmor;
 class OTCachedKey;
 class OTIdentifier;
@@ -338,5 +340,8 @@ public:
 	EXPORT   static void ThreadTimeout(void * pArg);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_CACHED_KEY_HPP__

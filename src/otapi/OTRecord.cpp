@@ -147,6 +147,8 @@
 
 
 
+namespace opentxs {
+
 const std::string Instrument_TypeStrings[] =
 {
     // ------------------
@@ -1363,3 +1365,5 @@ m_RecordType(eRecordType) { }
 
 
 
+
+} // namespace opentxs

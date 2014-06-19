@@ -167,6 +167,9 @@
 //    successfully, and the transaction inside that message also processed successfully, then no harvesting will
 //    be performed at all (obviously.)
 //
+
+namespace opentxs {
+
 void OTBasket::HarvestClosingNumbers(OTPseudonym & theNym, const OTIdentifier & theServerID, const bool bSave/*=true*/)
 {
     const OTString strServerID(theServerID);
@@ -530,3 +533,5 @@ bool OTBasket::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

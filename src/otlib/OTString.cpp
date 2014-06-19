@@ -175,6 +175,9 @@
     (without terminator--91 with terminator), then it will return 90.
  
  */
+
+namespace opentxs {
+
 //inline bool vformat(const char * fmt, va_list vl, std::string & str_output)
 //static
 bool OTString::vformat(const char * fmt, va_list * pvl, std::string & str_Output)
@@ -1551,3 +1554,5 @@ void OTString::reset(void)
 {
   m_lPosition = 0;
 }
+
+} // namespace opentxs

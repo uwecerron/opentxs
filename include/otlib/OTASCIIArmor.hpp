@@ -135,6 +135,8 @@
 
 #include "OTString.hpp"
 
+namespace opentxs {
+
 class OTASCIIArmor;
 class OTData;
 class OTEnvelope;
@@ -247,5 +249,8 @@ EXPORT  bool SetStringMap(const std::map<std::string, std::string> & the_map, bo
 EXPORT  bool SetAndPackStringMap(const std::map<std::string, std::string> & the_map, bool bLineBreaks=true);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_ASCII_ARMOR_HPP__

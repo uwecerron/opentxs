@@ -251,6 +251,7 @@
 #define    KEY_SPENT               "spent"
 #define    KEY_USERACCT            "useracct"
 
+namespace opentxs {
 
 OTString OTFolders::s_strAccount("");
 OTString OTFolders::s_strCert("");
@@ -337,3 +338,5 @@ const OTString & OTFolders::Script()          { return GetFolder(s_strScript    
 const OTString & OTFolders::SmartContracts()  { return GetFolder(s_strSmartContracts  ); }
 const OTString & OTFolders::Spent()           { return GetFolder(s_strSpent           ); }
 const OTString & OTFolders::UserAcct()        { return GetFolder(s_strUserAcct        ); }
+
+} // namespace opentxs

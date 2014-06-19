@@ -140,6 +140,8 @@
 #include "OTMessageOutBuffer.hpp"
 
 
+namespace opentxs {
+
 struct TransportCallback;
 
 class OTAccount;
@@ -362,5 +364,8 @@ public:
 	// void HarvestTransactionNumbers(OTTransaction & theTransaction, OTPseudonym & theNym); 
 
 };
+
+
+} // namespace opentxs
 
 #endif // __OTCLIENT_HPP__

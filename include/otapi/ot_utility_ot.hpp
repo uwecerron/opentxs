@@ -7,6 +7,8 @@
 
 #include <OTStorage.hpp>
 
+namespace opentxs {
+
 #define OT_UTILITY_OT
 
 
@@ -105,5 +107,8 @@ public:
     EXPORT OT_UTILITY_OT void setLastReplyReceived(const string & strReply);
     EXPORT OT_UTILITY_OT void setNbrTransactionCount(int32_t new_trans_dl);
 };
+
+
+} // namespace opentxs
 
 #endif

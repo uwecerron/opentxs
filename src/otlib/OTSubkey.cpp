@@ -157,6 +157,9 @@
 
 // return -1 if error, 0 if nothing, and 1 if the node was processed.
 //
+
+namespace opentxs {
+
 int32_t OTSubkey::ProcessXMLNode(irr::io::IrrXMLReader*& xml)
 {
 	int32_t nReturnVal = ot_super::ProcessXMLNode(xml);
@@ -333,3 +336,5 @@ OTSubkey::OTSubkey(OTCredential & theOwner) : ot_super(theOwner)
 
 
 OTSubkey::~OTSubkey() { }
+
+} // namespace opentxs

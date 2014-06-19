@@ -32,6 +32,7 @@ extern string Args;
 
 extern string OT_CLI_GetValueByKey(string, string);
 
+namespace opentxs {
 
 
 OT_COMMANDS_OT int32_t OT_Command::main_revoke_credential()
@@ -11719,3 +11720,5 @@ OT_COMMANDS_OT int32_t OT_Command::main_issue_asset()
 
     return -1;
 }
+
+} // namespace opentxs

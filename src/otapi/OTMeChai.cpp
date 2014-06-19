@@ -140,6 +140,8 @@
 #include <OT_ME.hpp>
 
 
+namespace opentxs {
+
 OTMeChai::OTMeChai(OT_ME * pMe)
 : m_pMe(pMe)
 {
@@ -936,3 +938,5 @@ std::string OTMeChai::adjust_usage_credits( const std::string & SERVER_ID,
 }
 
 #endif // OT_USE_SCRIPT_CHAI
+
+} // namespace opentxs

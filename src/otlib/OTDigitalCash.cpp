@@ -138,6 +138,8 @@
 #include "OTPaths.hpp"
 
 
+namespace opentxs {
+
 #ifdef OT_CASH_USING_MAGIC_MONEY
 
 // Todo:  Someday...
@@ -181,3 +183,5 @@ _OT_Lucre_Dumper::~_OT_Lucre_Dumper()
 #else  // No digital cash lib is selected? Perhaps error message here?
 
 #endif // Which digital cash library we're using.
+
+} // namespace opentxs

@@ -162,6 +162,8 @@
 #endif
 
 
+namespace opentxs {
+
 OTCaller::~OTCaller()
 {
 	OTLog::vOutput(0, "OTCaller::~OTCaller: (This should only happen as the application is closing.)\n");
@@ -360,3 +362,5 @@ void getPassword(void) {
 However, it should be noted that both calling functions and accessing volatile qualified objects can still be optimized out
  (while maintaining strict conformance to the standard), so the above may still not work.
  */
+
+} // namespace opentxs

@@ -144,6 +144,9 @@
 
 
 // OTAgreement is derived from OTCronItem.  It handles re-occuring billing.
+
+namespace opentxs {
+
 bool OTAgreement::SendNoticeToAllParties(bool bSuccessMsg,
                                          OTPseudonym & theServerNym,
                                          const OTIdentifier & theServerID,
@@ -1547,3 +1550,5 @@ bool OTAgreement::SaveContractWallet(std::ofstream & ofs)
 {
 	return true;
 }
+
+} // namespace opentxs

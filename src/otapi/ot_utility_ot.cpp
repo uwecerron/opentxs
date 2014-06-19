@@ -24,6 +24,8 @@
 #include <OT_ME.hpp>
 
 
+namespace opentxs {
+
 OT_UTILITY_OT bool VerifyExists(const string & theObjectNameAsStr)
 {
     return VerifyExists(theObjectNameAsStr, true);
@@ -3123,3 +3125,5 @@ OT_UTILITY_OT int32_t Utility::getOutboxLowLevel(const string & serverID, const 
 
     return nReturn;
 }
+
+} // namespace opentxs

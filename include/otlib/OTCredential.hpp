@@ -170,6 +170,8 @@
 // the subkeys, meanwhile should only be able to do actions, and not issue
 // any new keys.
 
+namespace opentxs {
+
 class OTCredential;
 class OTIdentifier;
 class OTPassword;
@@ -335,5 +337,8 @@ public:
     // --------------------------------------
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_CREDENTIAL_HPP__

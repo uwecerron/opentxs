@@ -135,6 +135,8 @@
 
 #include "OTTransactionType.hpp"
 
+namespace opentxs {
+
 class OTAccount;
 class OTLedger;
 class OTMessage;
@@ -264,5 +266,8 @@ EXPORT	static char const * _GetTypeString(AccountType theType);
 EXPORT	char const * GetTypeString() { return OTAccount::_GetTypeString(m_AcctType); }
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_ACCOUNT_HPP__

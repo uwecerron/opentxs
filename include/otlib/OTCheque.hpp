@@ -136,6 +136,8 @@
 #include "OTTrackable.hpp"
 
 
+namespace opentxs {
+
 class OTCheque : public OTTrackable
 {
 private:  // Private prevents erroneous use by other classes.
@@ -217,5 +219,8 @@ EXPORT	virtual ~OTCheque();
 	virtual bool SaveContractWallet(std::ofstream & ofs);
 };
 
+
+
+} // namespace opentxs
 
 #endif // __OT_CHEQUE_HPP__

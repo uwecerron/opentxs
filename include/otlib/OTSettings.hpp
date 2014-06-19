@@ -148,6 +148,8 @@
 #endif
 
 
+namespace opentxs {
+
 class OTSettings
 {
 private:
@@ -221,5 +223,8 @@ public:
 #pragma clang diagnostic pop
 #endif
 
+
+
+} // namespace opentxs
 
 #endif // __OT_SETTINGS_HPP__

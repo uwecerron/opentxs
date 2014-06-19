@@ -152,6 +152,9 @@
 // true  == success (even if nothing harvested.)
 // false == error.
 //
+
+namespace opentxs {
+
 bool OTMessage::HarvestTransactionNumbers(      OTPseudonym &  theNym,
                                           const bool           bHarvestingForRetry,     // false until positively asserted.
                                           const bool           bReplyWasSuccess,        // false until positively asserted.
@@ -4568,3 +4571,5 @@ bool OTMessage::SaveContractWallet(std::ofstream & ofs)
 		return false;
 	}
 }
+
+} // namespace opentxs

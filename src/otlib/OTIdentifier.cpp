@@ -142,6 +142,8 @@
 #include "OTSymmetricKey.hpp"
 
 
+namespace opentxs {
+
 OTIdentifier::OTIdentifier() : OTData()  { }
 
 
@@ -472,3 +474,5 @@ void OTIdentifier::GetString(OTString & theStr) const
 {
     OTCrypto::It()->SetBase62StringFromID(*this, theStr); // *this input, theStr output.
 }
+
+} // namespace opentxs

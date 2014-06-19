@@ -15,15 +15,24 @@ mkdir opentxs
 
 # opentxs
 cp -rf include opentxs/
-cp -rf src/otlib/.libs/libot.so opentxs/
-cp -rf src/otlib/.libs/libot.so.0 opentxs/
-cp -rf src/otlib/.libs/libot.so.0.0.0 opentxs/
-cp -rf src/otextensions/.libs/libotextensions.so opentxs/
-cp -rf src/otextensions/.libs/libotextensions.so.0 opentxs/
-cp -rf src/otextensions/.libs/libotextensions.so.0.0.0 opentxs/
-cp -rf src/otapi/.libs/libotapi.so opentxs/
-cp -rf src/otapi/.libs/libotapi.so.0 opentxs/
-cp -rf src/otapi/.libs/libotapi.so.0.0.0 opentxs/
+if [[ "$os" == "linux" ]] ; then
+    cp -rf src/otlib/.libs/libot.so opentxs/
+    cp -rf src/otlib/.libs/libot.so.0 opentxs/
+    cp -rf src/otlib/.libs/libot.so.0.0.0 opentxs/
+    cp -rf src/otextensions/.libs/libotextensions.so opentxs/
+    cp -rf src/otextensions/.libs/libotextensions.so.0 opentxs/
+    cp -rf src/otextensions/.libs/libotextensions.so.0.0.0 opentxs/
+    cp -rf src/otapi/.libs/libotapi.so opentxs/
+    cp -rf src/otapi/.libs/libotapi.so.0 opentxs/
+    cp -rf src/otapi/.libs/libotapi.so.0.0.0 opentxs/
+else
+    cp -rf src/otlib/.libs/libot.0.dylib opentxs/
+    cp -rf src/otlib/.libs/libot.dylib opentxs/
+    cp -rf src/otextensions/.libs/libotextensions.0.dylib opentxs/
+    cp -rf src/otextensions/.libs/libotextensions.dylib opentxs/
+    cp -rf src/otapi/.libs/libotapi.0.dylib opentxs/
+    cp -rf src/otapi/.libs/libotapi.dylib opentxs/
+fi
 cp -rf src/.libs/opentxs opentxs/
 
 # deps

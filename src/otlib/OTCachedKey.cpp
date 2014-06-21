@@ -144,7 +144,6 @@
 #include "OTPasswordData.hpp"
 #include "OTSymmetricKey.hpp"
 
-
 #if defined (OT_CRYPTO_USING_OPENSSL)
 extern "C"
 {

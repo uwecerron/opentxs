@@ -216,16 +216,16 @@ public:
                                 );
 
 	// ------------------------------------------------------------------------
-	EXPORT	bool SerializeTo (OTPayload & theOutput) const;
+	EXPORT	bool SerializeTo   (OTPayload & theOutput) const;
 	EXPORT	bool SerializeFrom (OTPayload & theInput);
 
-	EXPORT	bool SerializeTo (OTASCIIArmor & ascOutput) const;
+	EXPORT	bool SerializeTo   (OTASCIIArmor & ascOutput) const;
 	EXPORT	bool SerializeFrom (const OTASCIIArmor & ascInput);
 
-	EXPORT	bool SerializeTo (OTString & strOutput, bool bEscaped=false) const;
+	EXPORT	bool SerializeTo   (OTString & strOutput, bool bEscaped=false) const;
 	EXPORT	bool SerializeFrom (const OTString & strInput, bool bEscaped=false);
 	// ------------------------------------------------------------------------
-	inline	bool IsGenerated() const { return m_bIsGenerated; }
+	inline	bool IsGenerated()  const { return m_bIsGenerated; }
 	inline  bool HasHashCheck() const { return m_bHasHashCheck; }
 	// ------------------------------------------------------------------------
 	EXPORT	void GetIdentifier(OTIdentifier & theIdentifier) const;
@@ -269,11 +269,13 @@ public:
 	// Generates this OTSymmetricKey based on an OTPassword. The generated key is
 	// stored in encrypted form, based on a derived key from that password.
 	//
-	EXPORT	bool GenerateKey(
-                             const OTPassword &  thePassphrase,
-                                   OTPassword ** ppDerivedKey=NULL // If you want, I can pass this back to you.
-                             );
-
+	EXPORT	bool GenerateKey(const OTPassword &  thePassphrase,
+                                   OTPassword ** ppDerivedKey=NULL); // If you want, I can pass this back to you.
+	// ------------------------------------------------------------------------
+	// Changes the passphrase on an existing symmetric key.
+	//
+	EXPORT	bool ChangePassphrase(const OTPassword & oldPassphrase,
+                                  const OTPassword & newPassphrase);
 	// ------------------------------------------------------------------------
 	// For old SymmetricKey's that do not yet have a hash-check.
 	// This will generate a hash check for them.
